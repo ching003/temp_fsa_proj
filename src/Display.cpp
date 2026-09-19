@@ -83,7 +83,8 @@ void Display::initScreen(){
 }
 
 // ============================================================
-// Render Dashboard (thread-safe, ghi đề tài vị trí cố định)
+// Render Dashboard
+// Thread-safe rendering at fixed console positions
 // ============================================================
 
 void Display::renderDashboard(const TemperatureController &ctrl,
