@@ -12,6 +12,9 @@ private:
     // Random engine
     std::mt19937 rng;
     std::uniform_real_distribution<double> tempDist;
+    std::uniform_real_distribution<double> failureDist;
+
+    double failureRate;  // Ty le loi ngau nhien (0.0 - 1.0)
 
 public:
     // Constructor
@@ -26,6 +29,8 @@ public:
     // Getter & Setter
     void setMode(Mode mode);
     Mode getMode() const;
+    void setFailureRate(double rate);
+    double getFailureRate() const;
 };
 
 #endif 
