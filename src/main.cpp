@@ -200,6 +200,8 @@ int main()
     Alarm alarmDevice;
     TemperatureController controller(fan, alarmDevice, logger, config);
     Display display(dataMutex);
+    InputHandler inputHandler(dataMutex, sharedInput, systemRunning,
+                              currentMode, display);
 
     // [4] Init screen
     display.initScreen();
