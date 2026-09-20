@@ -19,11 +19,11 @@
 // Constructor
 // ============================================================
 
-InputHandler::InputHandler(std::mutex& mtx,
-                           InputMessage& input,
-                           std::atomic<bool>& run,
-                           Mode& mode,
-                           Display& disp)
+InputHandler::InputHandler(std::mutex &mtx,
+                           InputMessage &input,
+                           std::atomic<bool> &run,
+                           Mode &mode,
+                           Display &disp)
     : dataMutex(mtx),
       sharedInput(input),
       running(run),
@@ -36,11 +36,16 @@ InputHandler::InputHandler(std::mutex& mtx,
 // Main thread entry point
 // ============================================================
 
-void InputHandler::run() {
-    while (running.load()) {
-        if (currentMode == Mode::AUTO) {
+void InputHandler::run()
+{
+    while (running.load())
+    {
+        if (currentMode == Mode::AUTO)
+        {
             handleAutoMode();
-        } else {
+        }
+        else
+        {
             handleManualMode();
         }
     }
@@ -50,16 +55,20 @@ void InputHandler::run() {
 // AUTO mode: non-blocking key detection
 // ============================================================
 
-void InputHandler::handleAutoMode() {
+void InputHandler::handleAutoMode()
+{
 #ifdef _WIN32
     // Windows: dung _kbhit() de kiem tra phim khong blocking
-    if (_kbhit()) {
+    if (_kbhit())
+    {
         int ch = _getch();
-        if (ch == 'q' || ch == 'Q') {
+        if (ch == 'q' || ch == 'Q')
+        {
             running.store(false);
             return;
         }
-        if (ch == 'm' || ch == 'M') {
+        if (ch == 'm' || ch == 'M')
+        {
             std::lock_guard<std::mutex> lock(dataMutex);
             sharedInput.modeToggleRequested = true;
         }
@@ -73,14 +82,18 @@ void InputHandler::handleAutoMode() {
     tv.tv_sec = 0;
     tv.tv_usec = 50000; // 50ms timeout
 
-    if (select(STDIN_FILENO + 1, &fds, nullptr, nullptr, &tv) > 0) {
+    if (select(STDIN_FILENO + 1, &fds, nullptr, nullptr, &tv) > 0)
+    {
         char ch;
-        if (read(STDIN_FILENO, &ch, 1) > 0) {
-            if (ch == 'q' || ch == 'Q') {
+        if (read(STDIN_FILENO, &ch, 1) > 0)
+        {
+            if (ch == 'q' || ch == 'Q')
+            {
                 running.store(false);
                 return;
             }
-            if (ch == 'm' || ch == 'M') {
+            if (ch == 'm' || ch == 'M')
+            {
                 std::lock_guard<std::mutex> lock(dataMutex);
                 sharedInput.modeToggleRequested = true;
             }
@@ -96,9 +109,11 @@ void InputHandler::handleAutoMode() {
 // MANUAL mode: blocking input
 // ============================================================
 
-void InputHandler::handleManualMode() {
+void InputHandler::handleManualMode()
+{
     // Kiem tra xem co con chay khong truoc khi block
-    if (!running.load()) return;
+    if (!running.load())
+        return;
 
     // Hien thi prompt o input zone
     {
@@ -111,22 +126,26 @@ void InputHandler::handleManualMode() {
     std::getline(std::cin, line);
 
     // Kiem tra lai trang thai sau khi unblock
-    if (!running.load()) return;
+    if (!running.load())
+        return;
 
     // Kiem tra xem co phai lenh dac biet khong
-    if (line == "q" || line == "Q") {
+    if (line == "q" || line == "Q")
+    {
         running.store(false);
         return;
     }
 
-    if (line == "m" || line == "M") {
+    if (line == "m" || line == "M")
+    {
         std::lock_guard<std::mutex> lock(dataMutex);
         sharedInput.modeToggleRequested = true;
         return;
     }
 
     // Parse so thuc
-    try {
+    try
+    {
         double value = std::stod(line);
 
         {
@@ -143,8 +162,9 @@ void InputHandler::handleManualMode() {
                 << std::setprecision(1) << value << " C";
             display.renderInputStatus(oss.str());
         }
-
-    } catch (const std::exception&) {
+    }
+    catch (const std::exception &)
+    {
         // Input khong hop le
         std::lock_guard<std::mutex> lock(dataMutex);
         display.renderInputStatus("[Error] Invalid input! Enter a number.");
@@ -155,10 +175,12 @@ void InputHandler::handleManualMode() {
 // Enable raw mode (Windows)
 // ============================================================
 
-void InputHandler::enableRawMode() {
+void InputHandler::enableRawMode()
+{
 #ifdef _WIN32
     HANDLE hIn = GetStdHandle(STD_INPUT_HANDLE);
-    if (hIn != INVALID_HANDLE_VALUE) {
+    if (hIn != INVALID_HANDLE_VALUE)
+    {
         DWORD mode = 0;
         GetConsoleMode(hIn, &mode);
         // Bat Virtual Terminal Input
