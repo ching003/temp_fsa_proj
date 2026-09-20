@@ -15,6 +15,9 @@ private:
     ThresholdConfig config;
 
     SystemStatus currentStatus;
+    double lastValidTemp;
+    int faultCounter;
+    bool wasInError;
 
     TemperatureStats stats;
 
@@ -40,13 +43,18 @@ public:
     // Getters
     SystemStatus getStatus() const;
     double getLastValidTemp() const;
-    const TemperatureStats& getStats() const;
-    
+    const TemperatureStats &getStats() const;
+    int getFaultCounter() const;
+    const ThresholdConfig &getConfig() const;
+
     // Lay trang thai actuators (cho Display)
     DeviceState getFanState() const;
     DeviceState getAlarmState() const;
     std::string getFanStateString() const;
     std::string getAlarmStateString() const;
+
+    // Cap nhat config
+    void updateConfig(const ThresholdConfig &newConfig);
 };
 
 #endif
