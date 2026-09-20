@@ -25,11 +25,11 @@ enum class DeviceState
 // Trang thai he thong
 enum class SystemStatus
 {
-    NORMAL,   // < fanThreshold
-    WARNING,  // fanThreshold -> alarmThreshold
-    CRITICAL, // >= alarmThreshold
-    // SENSOR_ERROR, // Du lieu khong hop le (transient, 1-3 chu ky)
-    // FAILSAFE      // Sensor loi lien tuc > faultThreshold chu ky
+    NORMAL,       // < fanThreshold
+    WARNING,      // fanThreshold -> alarmThreshold
+    CRITICAL,     // >= alarmThreshold
+    SENSOR_ERROR, // Du lieu khong hop le (transient, 1-3 chu ky)
+    FAILSAFE      // Sensor loi lien tuc > faultThreshold chu ky
 };
 
 // Muc do log
@@ -52,32 +52,38 @@ struct ThresholdConfig
     double alarmThreshold = 40.0; // Nguong bat coi
     double minValid = 0.0;        // Nhiet do hop le min
     double maxValid = 60.0;       // Nhiet do hop le max
-    // int faultThreshold = 3;       // So chu ky loi truoc khi FAILSAFE
+    int faultThreshold = 3;       // So chu ky loi truoc khi FAILSAFE
 };
 
 // Thong ke nhiet do (running statistics - O(1) memory)
-struct TemperatureStats {
+struct TemperatureStats
+{
     double minTemp = std::numeric_limits<double>::max();
     double maxTemp = std::numeric_limits<double>::lowest();
-    double sum     = 0.0;
-    int    count   = 0;
+    double sum = 0.0;
+    int count = 0;
 
-    void update(double temp) {
-        if (temp < minTemp) minTemp = temp;
-        if (temp > maxTemp) maxTemp = temp;
+    void update(double temp)
+    {
+        if (temp < minTemp)
+            minTemp = temp;
+        if (temp > maxTemp)
+            maxTemp = temp;
         sum += temp;
         count++;
     }
 
-    double average() const {
+    double average() const
+    {
         return count > 0 ? sum / count : 0.0;
     }
 
-    void reset() {
+    void reset()
+    {
         minTemp = std::numeric_limits<double>::max();
         maxTemp = std::numeric_limits<double>::lowest();
-        sum     = 0.0;
-        count   = 0;
+        sum = 0.0;
+        count = 0;
     }
 };
 
@@ -95,10 +101,10 @@ inline std::string statusToString(SystemStatus status)
         return "WARNING";
     case SystemStatus::CRITICAL:
         return "CRITICAL";
-    // case SystemStatus::SENSOR_ERROR:
-    //     return "SENSOR_ERROR";
-    // case SystemStatus::FAILSAFE:
-    //     return "FAILSAFE";
+    case SystemStatus::SENSOR_ERROR:
+        return "SENSOR_ERROR";
+    case SystemStatus::FAILSAFE:
+        return "FAILSAFE";
     default:
         return "UNKNOWN";
     }
