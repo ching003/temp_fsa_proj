@@ -23,9 +23,9 @@ using namespace std;
 // Global: shared state giua main thread va input thread
 // ============================================================
 
-std::mutex dataMutex;
+mutex dataMutex;
 InputMessage sharedInput;
-std::atomic<bool> systemRunning(true);
+atomic<bool> systemRunning(true);
 Mode currentMode = Mode::AUTO;
 
 // ============================================================
@@ -44,131 +44,131 @@ ThresholdConfig showStartupMenu()
 {
     ThresholdConfig config;
 
-    std::cout << "\n";
-    std::cout << "  \033[36;1m========================================\033[0m\n";
-    std::cout << "  \033[1;37m  TEMPERATURE CONTROL SYSTEM SIMULATOR\033[0m\n";
-    std::cout << "  \033[36;1m========================================\033[0m\n\n";
+    cout << "\n";
+    cout << "  \033[36;1m========================================\033[0m\n";
+    cout << "  \033[1;37m  TEMPERATURE CONTROL SYSTEM SIMULATOR\033[0m\n";
+    cout << "  \033[36;1m========================================\033[0m\n\n";
 
-    std::cout << "  \033[90mDefault Configuration:\033[0m\n";
-    std::cout << "    Fan Threshold   : " << config.fanThreshold << " C\n";
-    std::cout << "    Alarm Threshold : " << config.alarmThreshold << " C\n";
-    std::cout << "    Valid Range     : [" << config.minValid << ", " << config.maxValid << "] C\n";
-    std::cout << "    Fault Threshold : " << config.faultThreshold << " cycles\n\n";
+    cout << "  \033[90mDefault Configuration:\033[0m\n";
+    cout << "    Fan Threshold   : " << config.fanThreshold << " C\n";
+    cout << "    Alarm Threshold : " << config.alarmThreshold << " C\n";
+    cout << "    Valid Range     : [" << config.minValid << ", " << config.maxValid << "] C\n";
+    cout << "    Fault Threshold : " << config.faultThreshold << " cycles\n\n";
 
-    std::cout << "  \033[1;37mOptions:\033[0m\n";
-    std::cout << "    1. Run with default configuration\n";
-    std::cout << "    2. Customize thresholds\n";
-    std::cout << "    3. Select mode (AUTO/MANUAL)\n\n";
+    cout << "  \033[1;37mOptions:\033[0m\n";
+    cout << "    1. Run with default configuration\n";
+    cout << "    2. Customize thresholds\n";
+    cout << "    3. Select mode (AUTO/MANUAL)\n\n";
 
-    std::cout << "  Enter option (1-3): ";
-    std::string input;
-    std::getline(std::cin, input);
+    cout << "  Enter option (1-3): ";
+    string input;
+    getline(cin, input);
 
     if (input == "2")
     {
-        std::cout << "\n  \033[1;37m--- Customize Thresholds ---\033[0m\n";
+        cout << "\n  \033[1;37m--- Customize Thresholds ---\033[0m\n";
 
         // Fan threshold
-        std::cout << "  Fan threshold (current: " << config.fanThreshold << " C): ";
-        std::getline(std::cin, input);
+        cout << "  Fan threshold (current: " << config.fanThreshold << " C): ";
+        getline(cin, input);
         if (!input.empty())
         {
             try
             {
-                double val = std::stod(input);
+                double val = stod(input);
                 if (val >= config.minValid && val <= config.maxValid)
                 {
                     config.fanThreshold = val;
                 }
                 else
                 {
-                    std::cout << "  \033[33m[Warning] Invalid value, keeping default.\033[0m\n";
+                    cout << "  \033[33m[Warning] Invalid value, keeping default.\033[0m\n";
                 }
             }
             catch (...)
             {
-                std::cout << "  \033[33m[Warning] Invalid input, keeping default.\033[0m\n";
+                cout << "  \033[33m[Warning] Invalid input, keeping default.\033[0m\n";
             }
         }
 
         // Alarm threshold
-        std::cout << "  Alarm threshold (current: " << config.alarmThreshold << " C): ";
-        std::getline(std::cin, input);
+        cout << "  Alarm threshold (current: " << config.alarmThreshold << " C): ";
+        getline(cin, input);
         if (!input.empty())
         {
             try
             {
-                double val = std::stod(input);
+                double val = stod(input);
                 if (val > config.fanThreshold && val <= config.maxValid)
                 {
                     config.alarmThreshold = val;
                 }
                 else
                 {
-                    std::cout << "  \033[33m[Warning] Must be > fan threshold ("
-                              << config.fanThreshold << "). Keeping default.\033[0m\n";
+                    cout << "  \033[33m[Warning] Must be > fan threshold ("
+                         << config.fanThreshold << "). Keeping default.\033[0m\n";
                 }
             }
             catch (...)
             {
-                std::cout << "  \033[33m[Warning] Invalid input, keeping default.\033[0m\n";
+                cout << "  \033[33m[Warning] Invalid input, keeping default.\033[0m\n";
             }
         }
 
         // Fault threshold
-        std::cout << "  Fault threshold cycles (current: " << config.faultThreshold << "): ";
-        std::getline(std::cin, input);
+        cout << "  Fault threshold cycles (current: " << config.faultThreshold << "): ";
+        getline(cin, input);
         if (!input.empty())
         {
             try
             {
-                int val = std::stoi(input);
+                int val = stoi(input);
                 if (val >= 1 && val <= 20)
                 {
                     config.faultThreshold = val;
                 }
                 else
                 {
-                    std::cout << "  \033[33m[Warning] Must be 1-20. Keeping default.\033[0m\n";
+                    cout << "  \033[33m[Warning] Must be 1-20. Keeping default.\033[0m\n";
                 }
             }
             catch (...)
             {
-                std::cout << "  \033[33m[Warning] Invalid input, keeping default.\033[0m\n";
+                cout << "  \033[33m[Warning] Invalid input, keeping default.\033[0m\n";
             }
         }
 
-        std::cout << "\n  \033[32m[OK] Configuration updated.\033[0m\n";
+        cout << "\n  \033[32m[OK] Configuration updated.\033[0m\n";
     }
 
     if (input == "3" || input == "2")
     {
-        std::cout << "\n  \033[1;37m--- Select Mode ---\033[0m\n";
-        std::cout << "    1. AUTO  (random temperature generation)\n";
-        std::cout << "    2. MANUAL (enter temperature manually)\n";
-        std::cout << "  Enter option (1-2): ";
-        std::string modeInput;
-        std::getline(std::cin, modeInput);
+        cout << "\n  \033[1;37m--- Select Mode ---\033[0m\n";
+        cout << "    1. AUTO  (random temperature generation)\n";
+        cout << "    2. MANUAL (enter temperature manually)\n";
+        cout << "  Enter option (1-2): ";
+        string modeInput;
+        getline(cin, modeInput);
         if (modeInput == "2")
         {
             currentMode = Mode::MANUAL;
-            std::cout << "  \033[32m[OK] Mode set to MANUAL.\033[0m\n";
+            cout << "  \033[32m[OK] Mode set to MANUAL.\033[0m\n";
         }
         else
         {
             currentMode = Mode::AUTO;
-            std::cout << "  \033[32m[OK] Mode set to AUTO.\033[0m\n";
+            cout << "  \033[32m[OK] Mode set to AUTO.\033[0m\n";
         }
     }
 
-    std::cout << "\n  \033[90mFinal Configuration:\033[0m\n";
-    std::cout << "    Fan Threshold   : " << config.fanThreshold << " C\n";
-    std::cout << "    Alarm Threshold : " << config.alarmThreshold << " C\n";
-    std::cout << "    Fault Threshold : " << config.faultThreshold << " cycles\n";
-    std::cout << "    Mode            : " << modeToString(currentMode) << "\n\n";
-    std::cout << "  \033[1;37mStarting system in 2 seconds...\033[0m\n";
+    cout << "\n  \033[90mFinal Configuration:\033[0m\n";
+    cout << "    Fan Threshold   : " << config.fanThreshold << " C\n";
+    cout << "    Alarm Threshold : " << config.alarmThreshold << " C\n";
+    cout << "    Fault Threshold : " << config.faultThreshold << " cycles\n";
+    cout << "    Mode            : " << modeToString(currentMode) << "\n\n";
+    cout << "  \033[1;37mStarting system in 2 seconds...\033[0m\n";
 
-    std::this_thread::sleep_for(std::chrono::seconds(2));
+    this_thread::sleep_for(chrono::seconds(2));
 
     return config;
 }
@@ -179,17 +179,17 @@ ThresholdConfig showStartupMenu()
 
 int main()
 {
-    // [1] Dang ky signal handler
+    // 1 Dang ky signal handler
     signal(SIGINT, signalHandler);
 
-    // [2] Startup menu (single-threaded, chua can mutex)
+    // 2 Startup menu (single-threaded, chua can mutex)
     ThresholdConfig config = showStartupMenu();
 
-    // [3] Khoi tao cac module
+    // 3 Khoi tao cac module
     Logger logger("logs/system.log");
     if (!logger.isOpen())
     {
-        std::cerr << "Failed to open log file! Exiting.\n";
+        cerr << "Failed to open log file! Exiting.\n";
         return 1;
     }
 
@@ -203,20 +203,20 @@ int main()
     InputHandler inputHandler(dataMutex, sharedInput, systemRunning,
                               currentMode, display);
 
-    // [4] Init screen
+    // 4 Init screen
     display.initScreen();
 
-    // [5] Spawn input thread
-    std::thread inputThread(&InputHandler::run, &inputHandler);
+    // 5 Spawn input thread
+    thread inputThread(&InputHandler::run, &inputHandler);
 
-    // [6] SUPER-LOOP - Main Thread (1s/cycle)
+    // 6 SUPER-LOOP - Main Thread (1s/cycle)
     while (systemRunning.load())
     {
         double temp = 0.0;
 
-        // [a] CHECK INPUT tu input thread (lock mutex)
+        // CHECK INPUT tu input thread (lock mutex)
         {
-            std::lock_guard<std::mutex> lock(dataMutex);
+            lock_guard<mutex> lock(dataMutex);
 
             // Toggle mode?
             if (sharedInput.modeToggleRequested)
@@ -243,7 +243,7 @@ int main()
             }
         }
 
-        // [b] READ SENSOR
+        // READ SENSOR
         if (currentMode == Mode::AUTO)
         {
             temp = sensor.generateRandom();
@@ -251,23 +251,23 @@ int main()
         else
         {
             // MANUAL: neu khong co input moi, giu lastValidTemp
-            std::lock_guard<std::mutex> lock(dataMutex);
+            lock_guard<mutex> lock(dataMutex);
             if (!sharedInput.hasNewInput && temp == 0.0)
             {
                 temp = controller.getLastValidTemp();
             }
         }
 
-        // [c] PROCESS
+        // PROCESS
         controller.process(temp);
 
-        // [d] DISPLAY (lock mutex)
+        // DISPLAY (lock mutex)
         display.renderDashboard(controller, sensor, currentMode);
 
-        // [e] WAIT
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+        // WAIT
+        this_thread::sleep_for(chrono::seconds(1));
     }
-    // [7] SHUTDOWN
+    // 7 SHUTDOWN
     logger.log(LogLevel::INFO, "System shutdown requested by user");
 
     // Cho input thread ket thuc
@@ -278,7 +278,7 @@ int main()
 
     display.cleanup();
 
-    std::cout << "\n  \033[32m[OK] System shutdown gracefully.\033[0m\n\n";
+    cout << "\n  \033[32m[OK] System shutdown gracefully.\033[0m\n\n";
 
     return 0;
 }
