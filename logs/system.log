@@ -1,0 +1,37 @@
+
+========================================
+[2026-09-21 00:20:59] [INFO] === System Started ===
+[2026-09-21 00:20:59] [INFO] Mode: AUTO
+[2026-09-21 00:20:59] [INFO] Controller initialized - Fan threshold: 30C, Alarm threshold: 40C, Valid range: [0, 60]C, Fault threshold: 3 cycles
+[2026-09-21 00:20:59] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 00:20:59] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 00:20:59] [INFO] Temperature: 39.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 00:21:00] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 00:21:00] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 00:21:00] [INFO] Temperature: 51.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 00:21:01] [INFO] Fan turned OFF
+[2026-09-21 00:21:01] [INFO] Alarm turned OFF
+[2026-09-21 00:21:01] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 00:21:01] [INFO] Temperature: 15.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 00:21:02] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 00:21:02] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 00:21:02] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 00:21:02] [INFO] Temperature: 42.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 00:21:03] [INFO] Fan turned OFF
+[2026-09-21 00:21:03] [INFO] Alarm turned OFF
+[2026-09-21 00:21:03] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 00:21:03] [INFO] Temperature: 0.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 00:21:04] [INFO] Temperature: 7.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 00:21:05] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 00:21:06] [WARNING] Sensor transient fault detected (Count: 2/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 00:21:07] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 00:21:07] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 00:21:07] [INFO] Status changed: SENSOR_ERROR -> WARNING
+[2026-09-21 00:21:07] [INFO] Temperature: 39.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 00:21:08] [INFO] Fan turned OFF
+[2026-09-21 00:21:08] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 00:21:08] [INFO] Temperature: 21.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 00:21:09] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 00:21:10] [INFO] System shutdown requested by user
+[2026-09-21 00:21:10] [INFO] === System Shutdown ===
+========================================
