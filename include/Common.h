@@ -55,6 +55,32 @@ struct ThresholdConfig
     // int faultThreshold = 3;       // So chu ky loi truoc khi FAILSAFE
 };
 
+// Thong ke nhiet do (running statistics - O(1) memory)
+struct TemperatureStats {
+    double minTemp = std::numeric_limits<double>::max();
+    double maxTemp = std::numeric_limits<double>::lowest();
+    double sum     = 0.0;
+    int    count   = 0;
+
+    void update(double temp) {
+        if (temp < minTemp) minTemp = temp;
+        if (temp > maxTemp) maxTemp = temp;
+        sum += temp;
+        count++;
+    }
+
+    double average() const {
+        return count > 0 ? sum / count : 0.0;
+    }
+
+    void reset() {
+        minTemp = std::numeric_limits<double>::max();
+        maxTemp = std::numeric_limits<double>::lowest();
+        sum     = 0.0;
+        count   = 0;
+    }
+};
+
 // ============================================================
 // Helper functions: enum -> string (cho log/display)
 // ============================================================

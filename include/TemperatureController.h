@@ -16,8 +16,16 @@ private:
 
     SystemStatus currentStatus;
 
+    TemperatureStats stats;
+
     // Phan loai nhiet do va dieu khien actuators
     void classifyAndControl(double temp);
+
+    // Xu ly khi sensor loi
+    void handleSensorFault(double rawTemp);
+
+    // Kiem tra recovery sau sensor error
+    void checkRecovery();
 
     // Kiem tra nhiet do hop le
     bool isValidTemperature(double temp) const;
@@ -32,7 +40,8 @@ public:
     // Getters
     SystemStatus getStatus() const;
     double getLastValidTemp() const;
-
+    const TemperatureStats& getStats() const;
+    
     // Lay trang thai actuators (cho Display)
     DeviceState getFanState() const;
     DeviceState getAlarmState() const;
