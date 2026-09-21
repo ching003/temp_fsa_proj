@@ -9,37 +9,55 @@
 #ifdef _WIN32
 #include <windows.h>
 #endif
+const int BOX_WIDTH = 44;
 
+// Lặp ký tự Unicode theo số lượng ký tự hiển thị.
+// Không dùng std::string(count, '═') vì '═' là UTF-8 nhiều byte.
+std::string repeatChar(const std::string &ch, int count)
+{
+    std::string result;
+    for (int i = 0; i < count; ++i)
+        result += ch;
+    return result;
+}
 // ============================================================
 // ANSI escape helpers
 // ============================================================
 
-void Display::moveCursor(int row, int col) const{
+void Display::moveCursor(int row, int col) const
+{
     std::cout << "\033[" << row << ";" << col << "H";
 }
 
-void Display::clearLine() const{
+void Display::clearLine() const
+{
     std::cout << "\033[2K";
 }
 
-void Display::saveCursor() const{
+void Display::saveCursor() const
+{
     std::cout << "\033[s";
 }
 
-void Display::restoreCursor() const{
+void Display::restoreCursor() const
+{
     std::cout << "\033[u";
 }
 
-void Display::hideCursor() const{
+void Display::hideCursor() const
+{
     std::cout << "\033[?25l";
 }
 
-void Display::showCursor() const{
+void Display::showCursor() const
+{
     std::cout << "\033[?25h";
 }
 
-std::string Display::getStatusColor(SystemStatus status) const{
-    switch (status){
+std::string Display::getStatusColor(SystemStatus status) const
+{
+    switch (status)
+    {
     case SystemStatus::NORMAL:
         return "\033[32m"; // Green
     case SystemStatus::WARNING:
@@ -59,18 +77,21 @@ std::string Display::getStatusColor(SystemStatus status) const{
 // Constructor
 // ============================================================
 
-Display::Display(std::mutex &mtx) : displayMutex(mtx){
+Display::Display(std::mutex &mtx) : displayMutex(mtx)
+{
 }
 
 // ============================================================
 // Init screen
 // ============================================================
 
-void Display::initScreen(){
+void Display::initScreen()
+{
 #ifdef _WIN32
     // Bật Virtual Terminal Processing trên Windows
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
-    if (hOut != INVALID_HANDLE_VALUE){
+    if (hOut != INVALID_HANDLE_VALUE)
+    {
         DWORD dwMode = 0;
         GetConsoleMode(hOut, &dwMode);
         dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
@@ -89,176 +110,331 @@ void Display::initScreen(){
 
 void Display::renderDashboard(const TemperatureController &ctrl,
                               const TemperatureSensor &sensor,
-                              Mode currentMode){
+                              Mode currentMode)
+{
     std::lock_guard<std::mutex> lock(displayMutex);
-
-    saveCursor();
-    hideCursor();
 
     SystemStatus status = ctrl.getStatus();
     std::string color = getStatusColor(status);
-    std::string reset = "\033[0m";
+    const std::string reset = "\033[0m";
 
-    int row = DASHBOARD_START_ROW;
+    const TemperatureStats &stats = ctrl.getStats();
 
+    // Xóa toàn bộ dashboard cũ
+    moveCursor(DASHBOARD_START_ROW, 1);
+
+    for (int i = DASHBOARD_START_ROW; i <= DASHBOARD_END_ROW; ++i)
+    {
+        moveCursor(i, 1);
+        clearLine();
+    }
+
+    // Hàm tạo một dòng trong khung
+    auto printRow = [&](const std::string &content)
+    {
+        // BOX_WIDTH là số ký tự nằm giữa 2 cạnh của khung.
+        int visibleWidth = static_cast<int>(content.length());
+        int padding = BOX_WIDTH - visibleWidth;
+
+        if (padding < 0)
+            padding = 0;
+
+        std::cout << "  \033[36;1m║"
+                  << reset
+                  << content
+                  << std::string(padding, ' ')
+                  << "\033[36;1m║"
+                  << reset
+                  << '\n';
+    };
+
+    // =========================
+    // Top
+    // =========================
+
+    std::cout << "  \033[36;1m╔"
+              << repeatChar("═", BOX_WIDTH)
+              << "╗"
+              << reset
+              << '\n';
+
+    // =========================
     // Title
-    moveCursor(row++, 1);
-    clearLine();
-    std::cout << "  \033[36;1m\xE2\x95\x94\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x97" << reset;
+    // =========================
 
-    moveCursor(row++, 1);
-    clearLine();
-    std::cout << "  \033[36;1m\xE2\x95\x91\033[1;37m   TEMPERATURE CONTROL SYSTEM       \033[36;1m\xE2\x95\x91" << reset;
+    std::string title = "TEMPERATURE CONTROL SYSTEM";
 
-    moveCursor(row++, 1);
-    clearLine();
-    std::cout << "  \033[36;1m\xE2\x95\xA0\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\xA3" << reset;
+    std::string titleContent = "   " + title;
 
+    printRow(titleContent);
+
+    // =========================
+    // Separator
+    // =========================
+
+    std::cout << "  \033[36;1m╠"
+              << repeatChar("═", BOX_WIDTH)
+              << "╣"
+              << reset
+              << '\n';
+
+    // =========================
     // Mode
-    moveCursor(row++, 1);
-    clearLine();
-    std::cout << "  \033[36;1m\xE2\x95\x91" << reset
-              << "  Mode        : \033[1;37m" << modeToString(currentMode)
-              << reset << std::string(23 - modeToString(currentMode).length(), ' ')
-              << "\033[36;1m\xE2\x95\x91" << reset;
+    // =========================
 
+    std::string modeStr = modeToString(currentMode);
+
+    printRow("  Mode        : " + modeStr);
+
+    // =========================
     // Temperature
-    moveCursor(row++, 1);
-    clearLine();
-    std::cout << "  \033[36;1m\xE2\x95\x91" << reset << "  Temperature : ";
-    if (status == SystemStatus::SENSOR_ERROR || status == SystemStatus::FAILSAFE){
-        std::cout << color << "*** SENSOR FAULT ***" << reset << "   ";
-    }
-    else{
-        std::ostringstream oss;
-        oss << std::fixed << std::setprecision(1) << ctrl.getLastValidTemp() << " C";
-        std::string tempStr = oss.str();
-        std::cout << color << tempStr << reset
-                  << std::string(23 - tempStr.length(), ' ');
-    }
-    std::cout << "\033[36;1m\xE2\x95\x91" << reset;
+    // =========================
 
+    std::ostringstream ossTemp;
+
+    if (status == SystemStatus::SENSOR_ERROR ||
+        status == SystemStatus::FAILSAFE)
+    {
+
+        ossTemp << "  Temperature : "
+                << color
+                << "*** SENSOR FAULT ***"
+                << reset;
+
+        // Không dùng printRow vì có ANSI color code
+        // nên xử lý riêng
+        std::string visibleText =
+            "  Temperature : *** SENSOR FAULT ***";
+
+        int padding =
+            BOX_WIDTH - static_cast<int>(visibleText.length());
+
+        if (padding < 0)
+            padding = 0;
+
+        std::cout << "  \033[36;1m║"
+                  << reset
+                  << "  Temperature : "
+                  << color
+                  << "*** SENSOR FAULT ***"
+                  << reset
+                  << std::string(padding, ' ')
+                  << "\033[36;1m║"
+                  << reset
+                  << '\n';
+    }
+    else
+    {
+
+        ossTemp << std::fixed
+                << std::setprecision(1)
+                << ctrl.getLastValidTemp()
+                << " C";
+
+        std::string tempStr = ossTemp.str();
+
+        std::string visibleText =
+            "  Temperature : " + tempStr;
+
+        int padding =
+            BOX_WIDTH - static_cast<int>(visibleText.length());
+
+        if (padding < 0)
+            padding = 0;
+
+        std::cout << "  \033[36;1m║"
+                  << reset
+                  << "  Temperature : "
+                  << color
+                  << tempStr
+                  << reset
+                  << std::string(padding, ' ')
+                  << "\033[36;1m║"
+                  << reset
+                  << '\n';
+    }
+
+    // =========================
     // Status
-    moveCursor(row++, 1);
-    clearLine();
-    std::string statusStr = statusToString(status);
-    std::cout << "  \033[36;1m\xE2\x95\x91" << reset
-              << "  Status      : " << color << statusStr << reset
-              << std::string(23 - statusStr.length(), ' ')
-              << "\033[36;1m\xE2\x95\x91" << reset;
+    // =========================
 
+    printRow("  Status      : " + statusToString(status));
+
+    // =========================
     // Fan
-    moveCursor(row++, 1);
-    clearLine();
+    // =========================
+
     std::string fanStr = ctrl.getFanStateString();
-    if (status == SystemStatus::FAILSAFE && ctrl.getFanState() == DeviceState::ON){
+
+    if (status == SystemStatus::FAILSAFE &&
+        ctrl.getFanState() == DeviceState::ON)
+    {
         fanStr += "  (FORCED)";
     }
-    std::cout << "  \033[36;1m\xE2\x95\x91" << reset
-              << "  Fan         : ";
-    if (ctrl.getFanState() == DeviceState::ON){
-        std::cout << "\033[32;1m" << fanStr << "\033[0m";
-    }
-    else{
-        std::cout << fanStr;
-    }
-    std::cout << std::string(23 - fanStr.length(), ' ')
-              << "\033[36;1m\xE2\x95\x91" << reset;
 
+    {
+        std::string visibleText = "  Fan         : " + fanStr;
+
+        int padding =
+            BOX_WIDTH - static_cast<int>(visibleText.length());
+
+        if (padding < 0)
+            padding = 0;
+
+        std::cout << "  \033[36;1m║"
+                  << reset
+                  << "  Fan         : ";
+
+        if (ctrl.getFanState() == DeviceState::ON)
+        {
+            std::cout << "\033[32;1m"
+                      << fanStr
+                      << reset;
+        }
+        else
+        {
+            std::cout << fanStr;
+        }
+
+        std::cout << std::string(padding, ' ')
+                  << "\033[36;1m║"
+                  << reset
+                  << '\n';
+    }
+
+    // =========================
     // Alarm
-    moveCursor(row++, 1);
-    clearLine();
+    // =========================
+
     std::string alarmStr = ctrl.getAlarmStateString();
-    if (status == SystemStatus::FAILSAFE && ctrl.getAlarmState() == DeviceState::ON){
+
+    if (status == SystemStatus::FAILSAFE &&
+        ctrl.getAlarmState() == DeviceState::ON)
+    {
         alarmStr += "  (FORCED)";
     }
-    std::cout << "  \033[36;1m\xE2\x95\x91" << reset
-              << "  Alarm       : ";
-    if (ctrl.getAlarmState() == DeviceState::ON){
-        std::cout << "\033[31;1m" << alarmStr << "\033[0m";
-    }
-    else{
-        std::cout << alarmStr;
-    }
-    std::cout << std::string(23 - alarmStr.length(), ' ')
-              << "\033[36;1m\xE2\x95\x91" << reset;
 
+    {
+        std::string visibleText = "  Alarm       : " + alarmStr;
+
+        int padding =
+            BOX_WIDTH - static_cast<int>(visibleText.length());
+
+        if (padding < 0)
+            padding = 0;
+
+        std::cout << "  \033[36;1m║"
+                  << reset
+                  << "  Alarm       : ";
+
+        if (ctrl.getAlarmState() == DeviceState::ON)
+        {
+            std::cout << "\033[31;1m"
+                      << alarmStr
+                      << reset;
+        }
+        else
+        {
+            std::cout << alarmStr;
+        }
+
+        std::cout << std::string(padding, ' ')
+                  << "\033[36;1m║"
+                  << reset
+                  << '\n';
+    }
+
+    // =========================
     // Separator
-    moveCursor(row++, 1);
-    clearLine();
-    std::cout << "  \033[36;1m\xE2\x95\xA0\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\xA3" << reset;
+    // =========================
 
+    std::cout << "  \033[36;1m╠"
+              << repeatChar("═", BOX_WIDTH)
+              << "╣"
+              << reset
+              << '\n';
+
+    // =========================
     // Statistics
-    const TemperatureStats &stats = ctrl.getStats();
-    moveCursor(row++, 1);
-    clearLine();
-    std::cout << "  \033[36;1m\xE2\x95\x91" << reset << "  Statistics:                          \033[36;1m\xE2\x95\x91" << reset;
+    // =========================
 
-    moveCursor(row++, 1);
-    clearLine();
-    if (stats.count > 0){
+    printRow("  Statistics:");
+
+    if (stats.count > 0)
+    {
+
         std::ostringstream ossStats;
-        ossStats << "    Min: " << std::fixed << std::setprecision(1) << stats.minTemp
-                 << " C  Max: " << stats.maxTemp << " C";
-        std::string statsStr = ossStats.str();
-        std::cout << "  \033[36;1m\xE2\x95\x91" << reset << statsStr
-                  << std::string(39 - statsStr.length(), ' ')
-                  << "\033[36;1m\xE2\x95\x91" << reset;
-    }
-    else{
-        std::cout << "  \033[36;1m\xE2\x95\x91" << reset << "    No data yet                        \033[36;1m\xE2\x95\x91" << reset;
-    }
 
-    moveCursor(row++, 1);
-    clearLine();
-    if (stats.count > 0){
+        ossStats << "    Min: "
+                 << std::fixed
+                 << std::setprecision(1)
+                 << stats.minTemp
+                 << " C  Max: "
+                 << stats.maxTemp
+                 << " C";
+
+        printRow(ossStats.str());
+
         std::ostringstream ossAvg;
-        ossAvg << "    Avg: " << std::fixed << std::setprecision(1) << stats.average()
-               << " C  Samples: " << stats.count;
-        std::string avgStr = ossAvg.str();
-        std::cout << "  \033[36;1m\xE2\x95\x91" << reset << avgStr
-                  << std::string(39 - avgStr.length(), ' ')
-                  << "\033[36;1m\xE2\x95\x91" << reset;
+
+        ossAvg << "    Avg: "
+               << std::fixed
+               << std::setprecision(1)
+               << stats.average()
+               << " C  Samples: "
+               << stats.count;
+
+        printRow(ossAvg.str());
     }
-    else{
-        std::cout << "  \033[36;1m\xE2\x95\x91" << reset << "                                       \033[36;1m\xE2\x95\x91" << reset;
+    else
+    {
+
+        printRow("    No data yet");
+        printRow("");
     }
 
+    // =========================
     // Separator
-    moveCursor(row++, 1);
-    clearLine();
-    std::cout << "  \033[36;1m\xE2\x95\xA0\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\xA3" << reset;
+    // =========================
 
-    // Fault counter
-    moveCursor(row++, 1);
-    clearLine();
+    std::cout << "  \033[36;1m╠"
+              << repeatChar("═", BOX_WIDTH)
+              << "╣"
+              << reset
+              << '\n';
+
+    // =========================
+    // Fault Counter
+    // =========================
+
     std::ostringstream ossFault;
-    ossFault << "  Fault Counter: " << ctrl.getFaultCounter();
-    if (status == SystemStatus::FAILSAFE){
+
+    ossFault << "  Fault Counter: "
+             << ctrl.getFaultCounter();
+
+    if (status == SystemStatus::FAILSAFE)
+    {
         ossFault << " (FAILSAFE!)";
     }
-    std::string faultStr = ossFault.str();
-    std::cout << "  \033[36;1m\xE2\x95\x91" << reset << faultStr
-              << std::string(39 - faultStr.length(), ' ')
-              << "\033[36;1m\xE2\x95\x91" << reset;
 
-    // Bottom border
-    moveCursor(row++, 1);
-    clearLine();
-    std::cout << "  \033[36;1m\xE2\x95\x9A\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x90\xE2\x95\x9D" << reset;
+    printRow(ossFault.str());
 
+    // =========================
+    // Bottom
+    // =========================
+
+    std::cout << "  \033[36;1m╚"
+              << repeatChar("═", BOX_WIDTH)
+              << "╝"
+              << reset
+              << '\n';
+
+    // =========================
     // Hotkeys
-    moveCursor(row++, 1);
-    clearLine();
+    // =========================
+
     std::cout << "    \033[90mQ = Quit | M = Toggle Mode\033[0m";
 
-    // Separator line
-    moveCursor(SEPARATOR_ROW, 1);
-    clearLine();
-    std::cout << "  \033[90m" << std::string(42, '-') << "\033[0m";
-
-    restoreCursor();
-    showCursor();
     std::cout.flush();
 }
 
@@ -266,7 +442,8 @@ void Display::renderDashboard(const TemperatureController &ctrl,
 // Input zone rendering
 // ============================================================
 
-void Display::renderInputPrompt(const std::string &prompt){
+void Display::renderInputPrompt(const std::string &prompt)
+{
     // Không lock mutex ở đây - caller phải lock
     moveCursor(INPUT_START_ROW, 1);
     clearLine();
@@ -274,7 +451,8 @@ void Display::renderInputPrompt(const std::string &prompt){
     std::cout.flush();
 }
 
-void Display::renderInputStatus(const std::string &status){
+void Display::renderInputStatus(const std::string &status)
+{
     // Không lock mutex ở đây - caller phải lock
     moveCursor(INPUT_STATUS_ROW, 1);
     clearLine();
@@ -282,7 +460,8 @@ void Display::renderInputStatus(const std::string &status){
     std::cout.flush();
 }
 
-void Display::clearInputZone(){
+void Display::clearInputZone()
+{
     std::lock_guard<std::mutex> lock(displayMutex);
     moveCursor(INPUT_START_ROW, 1);
     clearLine();
@@ -291,7 +470,8 @@ void Display::clearInputZone(){
     std::cout.flush();
 }
 
-void Display::cleanup(){
+void Display::cleanup()
+{
     showCursor();
     std::cout << "\033[0m"; // Reset all attributes
     moveCursor(INPUT_START_ROW + 3, 1);

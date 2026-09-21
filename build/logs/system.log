@@ -1,0 +1,1833 @@
+
+========================================
+[2026-09-21 23:12:38] [INFO] === System Started ===
+[2026-09-21 23:12:38] [INFO] Mode: AUTO
+[2026-09-21 23:12:38] [INFO] Controller initialized - Fan threshold: 30C, Alarm threshold: 40C, Valid range: [0, 60]C, Fault threshold: 3 cycles
+[2026-09-21 23:12:38] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:12:38] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:12:38] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:12:38] [INFO] Temperature: 44.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:39] [INFO] Fan turned OFF
+[2026-09-21 23:12:39] [INFO] Alarm turned OFF
+[2026-09-21 23:12:39] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:12:39] [INFO] Temperature: 1.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:12:40] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:12:40] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:12:40] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:12:40] [INFO] Temperature: 55.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:41] [INFO] Temperature: 52.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:42] [INFO] Temperature: 49.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:43] [INFO] Temperature: 48.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:44] [INFO] Alarm turned OFF
+[2026-09-21 23:12:44] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:12:44] [INFO] Temperature: 35.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:12:45] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:12:45] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:12:45] [INFO] Temperature: 45.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:46] [INFO] Fan turned OFF
+[2026-09-21 23:12:46] [INFO] Alarm turned OFF
+[2026-09-21 23:12:46] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:12:46] [INFO] Temperature: 1.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:12:47] [INFO] Temperature: 1.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:12:48] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:12:48] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:12:48] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:12:48] [INFO] Temperature: 44.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:49] [INFO] Fan turned OFF
+[2026-09-21 23:12:49] [INFO] Alarm turned OFF
+[2026-09-21 23:12:49] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:12:49] [INFO] Temperature: 11.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:12:50] [INFO] Temperature: 18.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:12:51] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:12:51] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:12:51] [INFO] Temperature: 35.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:12:52] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:12:52] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:12:52] [INFO] Temperature: 45.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:53] [INFO] Temperature: 43.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:54] [INFO] Fan turned OFF
+[2026-09-21 23:12:54] [INFO] Alarm turned OFF
+[2026-09-21 23:12:54] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:12:54] [INFO] Temperature: 5.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:12:55] [INFO] Temperature: 29.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:12:56] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:12:56] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:12:56] [INFO] Temperature: 33.9C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:12:57] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:12:57] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:12:57] [INFO] Temperature: 45.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:12:58] [INFO] Fan turned OFF
+[2026-09-21 23:12:58] [INFO] Alarm turned OFF
+[2026-09-21 23:12:58] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:12:58] [INFO] Temperature: 4.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:12:59] [INFO] Temperature: 6.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:00] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:13:00] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:13:00] [INFO] Temperature: 36.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:01] [INFO] Temperature: 31.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:02] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:13:03] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:13:03] [INFO] Fan turned OFF
+[2026-09-21 23:13:03] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:13:03] [INFO] Temperature: 29.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:04] [INFO] Temperature: 2.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:05] [INFO] Temperature: 9.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:06] [INFO] Temperature: 16.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:07] [INFO] Temperature: 19.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:08] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:13:08] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:08] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:13:08] [INFO] Temperature: 46.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:09] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:13:10] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:13:10] [INFO] Fan turned OFF
+[2026-09-21 23:13:10] [INFO] Alarm turned OFF
+[2026-09-21 23:13:10] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:13:10] [INFO] Temperature: 14.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:11] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:13:11] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:11] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:13:11] [INFO] Temperature: 51.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:12] [INFO] Temperature: 45.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:13] [INFO] Fan turned OFF
+[2026-09-21 23:13:13] [INFO] Alarm turned OFF
+[2026-09-21 23:13:13] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:13:13] [INFO] Temperature: 13.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:14] [INFO] Temperature: 1.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:15] [INFO] Temperature: 22.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:16] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:13:17] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:13:17] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:13:17] [INFO] Temperature: 14.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:18] [INFO] Temperature: 3.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:19] [INFO] Temperature: 21.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:20] [INFO] Temperature: 18.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:21] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:13:21] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:21] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:13:21] [INFO] Temperature: 55.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:22] [INFO] Alarm turned OFF
+[2026-09-21 23:13:22] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:13:22] [INFO] Temperature: 38.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:23] [INFO] Fan turned OFF
+[2026-09-21 23:13:23] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:13:23] [INFO] Temperature: 25.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:24] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:13:24] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:13:24] [INFO] Temperature: 39.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:25] [INFO] Temperature: 31.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:26] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:26] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:13:26] [INFO] Temperature: 57.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:27] [INFO] Temperature: 54.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:28] [INFO] Temperature: 54.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:29] [INFO] Temperature: 43.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:30] [INFO] Fan turned OFF
+[2026-09-21 23:13:30] [INFO] Alarm turned OFF
+[2026-09-21 23:13:30] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:13:30] [INFO] Temperature: 17.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:31] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:13:31] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:13:31] [INFO] Temperature: 37.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:32] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:32] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:13:32] [INFO] Temperature: 54.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:33] [INFO] Alarm turned OFF
+[2026-09-21 23:13:33] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:13:33] [INFO] Temperature: 36.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:34] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:34] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:13:34] [INFO] Temperature: 59.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:35] [INFO] Alarm turned OFF
+[2026-09-21 23:13:35] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:13:35] [INFO] Temperature: 30.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:36] [INFO] Fan turned OFF
+[2026-09-21 23:13:36] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:13:36] [INFO] Temperature: 22.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:37] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:13:37] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:37] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:13:37] [INFO] Temperature: 58.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:38] [INFO] Fan turned OFF
+[2026-09-21 23:13:38] [INFO] Alarm turned OFF
+[2026-09-21 23:13:38] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:13:38] [INFO] Temperature: 26.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:39] [INFO] Temperature: 3.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:40] [INFO] Temperature: 13.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:41] [INFO] Temperature: 6.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:42] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:13:42] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:42] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:13:42] [INFO] Temperature: 46.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:43] [INFO] Fan turned OFF
+[2026-09-21 23:13:43] [INFO] Alarm turned OFF
+[2026-09-21 23:13:43] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:13:43] [INFO] Temperature: 29.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:44] [INFO] Temperature: 1.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:45] [INFO] Temperature: 18.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:46] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:13:46] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:13:46] [INFO] Temperature: 37.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:47] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:47] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:13:47] [INFO] Temperature: 59.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:48] [INFO] Alarm turned OFF
+[2026-09-21 23:13:48] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:13:48] [INFO] Temperature: 31.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:49] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:49] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:13:49] [INFO] Temperature: 45.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:50] [INFO] Fan turned OFF
+[2026-09-21 23:13:50] [INFO] Alarm turned OFF
+[2026-09-21 23:13:50] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:13:50] [INFO] Temperature: 12.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:51] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:13:51] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:13:51] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:13:51] [INFO] Temperature: 46.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:52] [INFO] Temperature: 45.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:13:53] [INFO] Fan turned OFF
+[2026-09-21 23:13:53] [INFO] Alarm turned OFF
+[2026-09-21 23:13:53] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:13:53] [INFO] Temperature: 12.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:54] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:13:55] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:13:55] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:13:55] [INFO] Temperature: 24.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:56] [INFO] Temperature: 10.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:13:57] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:13:57] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:13:57] [INFO] Temperature: 33.4C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:13:58] [INFO] Temperature: 30.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:14:00] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:00] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:14:00] [INFO] Temperature: 57.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:01] [INFO] Temperature: 56.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:02] [INFO] Temperature: 40.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:03] [INFO] Fan turned OFF
+[2026-09-21 23:14:03] [INFO] Alarm turned OFF
+[2026-09-21 23:14:03] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:03] [INFO] Temperature: 10.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:04] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:14:04] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:04] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:14:04] [INFO] Temperature: 47.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:05] [INFO] Fan turned OFF
+[2026-09-21 23:14:05] [INFO] Alarm turned OFF
+[2026-09-21 23:14:05] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:05] [INFO] Temperature: 26.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:06] [INFO] Temperature: 25.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:07] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:14:07] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:07] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:14:07] [INFO] Temperature: 41.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:08] [INFO] Temperature: 45.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:09] [INFO] Fan turned OFF
+[2026-09-21 23:14:09] [INFO] Alarm turned OFF
+[2026-09-21 23:14:09] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:09] [INFO] Temperature: 7.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:10] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:14:10] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:14:10] [INFO] Temperature: 38.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:14:11] [INFO] Fan turned OFF
+[2026-09-21 23:14:11] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:14:11] [INFO] Temperature: 0.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:12] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:14:12] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:14:12] [INFO] Temperature: 30.9C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:14:13] [INFO] Fan turned OFF
+[2026-09-21 23:14:13] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:14:13] [INFO] Temperature: 16.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:14] [INFO] Temperature: 28.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:15] [INFO] Temperature: 10.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:16] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:14:16] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:16] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:14:16] [INFO] Temperature: 45.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:17] [INFO] Temperature: 59.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:18] [INFO] Fan turned OFF
+[2026-09-21 23:14:18] [INFO] Alarm turned OFF
+[2026-09-21 23:14:18] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:18] [INFO] Temperature: 22.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:19] [INFO] Temperature: 24.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:20] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:14:20] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:14:20] [INFO] Temperature: 33.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:14:21] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:21] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:14:21] [INFO] Temperature: 44.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:22] [INFO] Fan turned OFF
+[2026-09-21 23:14:22] [INFO] Alarm turned OFF
+[2026-09-21 23:14:22] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:22] [INFO] Temperature: 17.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:23] [INFO] Temperature: 11.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:24] [INFO] Temperature: 22.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:25] [INFO] Temperature: 13.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:26] [INFO] Temperature: 27.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:27] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:14:27] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:27] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:14:27] [INFO] Temperature: 54.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:28] [INFO] Alarm turned OFF
+[2026-09-21 23:14:28] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:14:28] [INFO] Temperature: 33.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:14:29] [INFO] Fan turned OFF
+[2026-09-21 23:14:29] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:14:29] [INFO] Temperature: 3.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:30] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:14:30] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:30] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:14:30] [INFO] Temperature: 52.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:31] [INFO] Fan turned OFF
+[2026-09-21 23:14:31] [INFO] Alarm turned OFF
+[2026-09-21 23:14:31] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:31] [INFO] Temperature: 25.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:32] [INFO] Temperature: 27.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:33] [INFO] Temperature: 12.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:34] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:14:34] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:14:34] [INFO] Temperature: 38.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:14:35] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:35] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:14:35] [INFO] Temperature: 59.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:36] [INFO] Temperature: 50.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:37] [INFO] Fan turned OFF
+[2026-09-21 23:14:37] [INFO] Alarm turned OFF
+[2026-09-21 23:14:37] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:37] [INFO] Temperature: 12.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:38] [INFO] Temperature: 1.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:39] [INFO] Temperature: 11.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:40] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:14:40] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:40] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:14:40] [INFO] Temperature: 59.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:41] [INFO] Temperature: 51.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:42] [INFO] Fan turned OFF
+[2026-09-21 23:14:42] [INFO] Alarm turned OFF
+[2026-09-21 23:14:42] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:42] [INFO] Temperature: 21.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:43] [INFO] Temperature: 21.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:44] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:14:44] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:14:44] [INFO] Temperature: 34.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:14:45] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:45] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:14:45] [INFO] Temperature: 56.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:46] [INFO] Fan turned OFF
+[2026-09-21 23:14:46] [INFO] Alarm turned OFF
+[2026-09-21 23:14:46] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:46] [INFO] Temperature: 2.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:47] [INFO] Temperature: 22.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:48] [INFO] Temperature: 9.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:49] [INFO] Temperature: 25.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:50] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:14:50] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:50] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:14:50] [INFO] Temperature: 47.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:51] [INFO] Fan turned OFF
+[2026-09-21 23:14:51] [INFO] Alarm turned OFF
+[2026-09-21 23:14:51] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:14:51] [INFO] Temperature: 28.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:52] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:14:52] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:14:52] [INFO] Temperature: 38.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:14:53] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:14:54] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:14:54] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:54] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:14:54] [INFO] Temperature: 44.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:55] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:14:56] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:14:56] [INFO] Fan turned OFF
+[2026-09-21 23:14:56] [INFO] Alarm turned OFF
+[2026-09-21 23:14:56] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:14:56] [INFO] Temperature: 3.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:14:57] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:14:57] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:14:57] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:14:57] [INFO] Temperature: 54.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:58] [INFO] Temperature: 50.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:14:59] [INFO] Temperature: 45.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:00] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:15:01] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:15:01] [INFO] Alarm turned OFF
+[2026-09-21 23:15:01] [INFO] Status changed: SENSOR_ERROR -> WARNING
+[2026-09-21 23:15:01] [INFO] Temperature: 34.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:15:02] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:02] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:15:02] [INFO] Temperature: 53.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:03] [INFO] Temperature: 46.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:04] [INFO] Fan turned OFF
+[2026-09-21 23:15:04] [INFO] Alarm turned OFF
+[2026-09-21 23:15:04] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:15:04] [INFO] Temperature: 19.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:05] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:15:05] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:15:05] [INFO] Temperature: 31.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:15:06] [INFO] Fan turned OFF
+[2026-09-21 23:15:06] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:15:06] [INFO] Temperature: 4.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:07] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:15:07] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:07] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:15:07] [INFO] Temperature: 54.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:08] [INFO] Alarm turned OFF
+[2026-09-21 23:15:08] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:15:08] [INFO] Temperature: 37.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:15:09] [INFO] Fan turned OFF
+[2026-09-21 23:15:09] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:15:09] [INFO] Temperature: 3.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:10] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:15:10] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:10] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:15:10] [INFO] Temperature: 42.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:11] [INFO] Temperature: 41.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:12] [INFO] Fan turned OFF
+[2026-09-21 23:15:12] [INFO] Alarm turned OFF
+[2026-09-21 23:15:12] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:15:12] [INFO] Temperature: 19.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:13] [INFO] Temperature: 11.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:14] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:15:14] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:15:14] [INFO] Temperature: 37.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:15:15] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:15] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:15:15] [INFO] Temperature: 59.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:16] [INFO] Fan turned OFF
+[2026-09-21 23:15:16] [INFO] Alarm turned OFF
+[2026-09-21 23:15:16] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:15:16] [INFO] Temperature: 15.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:17] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:15:17] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:15:17] [INFO] Temperature: 36.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:15:18] [INFO] Fan turned OFF
+[2026-09-21 23:15:18] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:15:18] [INFO] Temperature: 26.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:19] [INFO] Temperature: 21.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:20] [INFO] Temperature: 27.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:21] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:15:21] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:21] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:15:21] [INFO] Temperature: 49.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:22] [INFO] Fan turned OFF
+[2026-09-21 23:15:22] [INFO] Alarm turned OFF
+[2026-09-21 23:15:22] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:15:22] [INFO] Temperature: 28.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:23] [INFO] Temperature: 0.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:24] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:15:24] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:24] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:15:24] [INFO] Temperature: 48.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:26] [INFO] Alarm turned OFF
+[2026-09-21 23:15:26] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:15:26] [INFO] Temperature: 32.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:15:27] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:27] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:15:27] [INFO] Temperature: 40.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:28] [INFO] Fan turned OFF
+[2026-09-21 23:15:28] [INFO] Alarm turned OFF
+[2026-09-21 23:15:28] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:15:28] [INFO] Temperature: 25.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:29] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:15:29] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:29] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:15:29] [INFO] Temperature: 54.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:30] [INFO] Temperature: 55.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:31] [INFO] Fan turned OFF
+[2026-09-21 23:15:31] [INFO] Alarm turned OFF
+[2026-09-21 23:15:31] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:15:31] [INFO] Temperature: 29.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:15:32] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:15:32] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:32] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:15:32] [INFO] Temperature: 59.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:33] [INFO] Alarm turned OFF
+[2026-09-21 23:15:33] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:15:33] [INFO] Temperature: 39.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:15:34] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:15:34] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:15:34] [INFO] Temperature: 56.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:35] [INFO] Temperature: 49.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:36] [INFO] Temperature: 58.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:15:37] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:15:38] [INFO] System shutdown requested by user
+[2026-09-21 23:15:38] [INFO] === System Shutdown ===
+========================================
+
+========================================
+[2026-09-21 23:18:12] [INFO] === System Started ===
+[2026-09-21 23:18:12] [INFO] Mode: AUTO
+[2026-09-21 23:18:12] [INFO] Controller initialized - Fan threshold: 30C, Alarm threshold: 40C, Valid range: [0, 60]C, Fault threshold: 3 cycles
+[2026-09-21 23:18:12] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:18:12] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:12] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:18:12] [INFO] Temperature: 56.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:13] [INFO] Alarm turned OFF
+[2026-09-21 23:18:13] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:18:13] [INFO] Temperature: 36.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:18:14] [INFO] Temperature: 33.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:18:15] [INFO] Fan turned OFF
+[2026-09-21 23:18:15] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:18:15] [INFO] Temperature: 1.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:16] [INFO] Temperature: 7.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:17] [INFO] Temperature: 19.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:18] [INFO] Temperature: 16.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:19] [INFO] Temperature: 22.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:20] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:18:20] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:18:20] [INFO] Temperature: 34.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:18:21] [INFO] Fan turned OFF
+[2026-09-21 23:18:21] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:18:21] [INFO] Temperature: 9.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:22] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:18:23] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:18:23] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:18:23] [INFO] Temperature: 27.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:24] [INFO] Temperature: 17.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:25] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:18:25] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:25] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:18:25] [INFO] Temperature: 47.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:26] [INFO] Alarm turned OFF
+[2026-09-21 23:18:26] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:18:26] [INFO] Temperature: 38.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:18:27] [INFO] Fan turned OFF
+[2026-09-21 23:18:27] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:18:27] [INFO] Temperature: 28.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:28] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:18:28] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:28] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:18:28] [INFO] Temperature: 46.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:29] [INFO] Fan turned OFF
+[2026-09-21 23:18:29] [INFO] Alarm turned OFF
+[2026-09-21 23:18:29] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:18:29] [INFO] Temperature: 11.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:30] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:18:30] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:30] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:18:30] [INFO] Temperature: 47.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:31] [INFO] Fan turned OFF
+[2026-09-21 23:18:31] [INFO] Alarm turned OFF
+[2026-09-21 23:18:31] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:18:31] [INFO] Temperature: 19.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:32] [INFO] Temperature: 29.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:33] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:18:33] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:33] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:18:33] [INFO] Temperature: 45.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:34] [INFO] Alarm turned OFF
+[2026-09-21 23:18:34] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:18:34] [INFO] Temperature: 38.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:18:35] [INFO] Fan turned OFF
+[2026-09-21 23:18:35] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:18:35] [INFO] Temperature: 10.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:36] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:18:36] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:36] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:18:36] [INFO] Temperature: 50.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:37] [INFO] Fan turned OFF
+[2026-09-21 23:18:37] [INFO] Alarm turned OFF
+[2026-09-21 23:18:37] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:18:37] [INFO] Temperature: 2.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:38] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:18:38] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:38] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:18:38] [INFO] Temperature: 53.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:39] [INFO] Fan turned OFF
+[2026-09-21 23:18:39] [INFO] Alarm turned OFF
+[2026-09-21 23:18:39] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:18:39] [INFO] Temperature: 21.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:40] [INFO] Temperature: 9.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:41] [INFO] Temperature: 7.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:42] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:18:42] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:18:42] [INFO] Temperature: 37.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:18:43] [INFO] Fan turned OFF
+[2026-09-21 23:18:43] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:18:43] [INFO] Temperature: 4.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:44] [INFO] Temperature: 2.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:45] [INFO] Temperature: 1.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:46] [INFO] Temperature: 1.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:47] [INFO] Temperature: 28.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:48] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:18:48] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:48] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:18:48] [INFO] Temperature: 59.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:49] [INFO] Alarm turned OFF
+[2026-09-21 23:18:49] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:18:49] [INFO] Temperature: 31.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:18:50] [INFO] Temperature: 31.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:18:51] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:18:52] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:18:52] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:52] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:18:52] [INFO] Temperature: 47.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:53] [INFO] Fan turned OFF
+[2026-09-21 23:18:53] [INFO] Alarm turned OFF
+[2026-09-21 23:18:53] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:18:53] [INFO] Temperature: 27.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:54] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:18:54] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:54] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:18:54] [INFO] Temperature: 52.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:55] [INFO] Alarm turned OFF
+[2026-09-21 23:18:55] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:18:55] [INFO] Temperature: 36.9C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:18:56] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:18:56] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:18:56] [INFO] Temperature: 58.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:57] [INFO] Temperature: 51.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:18:58] [INFO] Fan turned OFF
+[2026-09-21 23:18:58] [INFO] Alarm turned OFF
+[2026-09-21 23:18:58] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:18:58] [INFO] Temperature: 10.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:18:59] [INFO] Temperature: 23.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:00] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:00] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:00] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:00] [INFO] Temperature: 54.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:01] [INFO] Alarm turned OFF
+[2026-09-21 23:19:01] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:19:01] [INFO] Temperature: 30.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:02] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:02] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:19:02] [INFO] Temperature: 49.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:03] [INFO] Temperature: 40.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:04] [INFO] Fan turned OFF
+[2026-09-21 23:19:04] [INFO] Alarm turned OFF
+[2026-09-21 23:19:04] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:19:04] [INFO] Temperature: 14.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:05] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:05] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:05] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:05] [INFO] Temperature: 46.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:06] [INFO] Fan turned OFF
+[2026-09-21 23:19:06] [INFO] Alarm turned OFF
+[2026-09-21 23:19:06] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:19:06] [INFO] Temperature: 26.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:08] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:08] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:08] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:08] [INFO] Temperature: 58.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:09] [INFO] Fan turned OFF
+[2026-09-21 23:19:09] [INFO] Alarm turned OFF
+[2026-09-21 23:19:09] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:19:09] [INFO] Temperature: 9.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:10] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:10] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:10] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:10] [INFO] Temperature: 46.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:11] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:19:12] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:19:12] [INFO] Fan turned OFF
+[2026-09-21 23:19:12] [INFO] Alarm turned OFF
+[2026-09-21 23:19:12] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:19:12] [INFO] Temperature: 17.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:13] [INFO] Temperature: 7.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:14] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:19:14] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:19:14] [INFO] Temperature: 31.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:15] [INFO] Fan turned OFF
+[2026-09-21 23:19:15] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:19:15] [INFO] Temperature: 24.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:16] [INFO] Temperature: 27.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:17] [INFO] Temperature: 25.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:18] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:19:18] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:19:18] [INFO] Temperature: 32.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:19] [INFO] Fan turned OFF
+[2026-09-21 23:19:19] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:19:19] [INFO] Temperature: 2.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:20] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:20] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:20] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:20] [INFO] Temperature: 42.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:21] [INFO] Fan turned OFF
+[2026-09-21 23:19:21] [INFO] Alarm turned OFF
+[2026-09-21 23:19:21] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:19:21] [INFO] Temperature: 4.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:22] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:22] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:22] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:22] [INFO] Temperature: 49.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:23] [INFO] Fan turned OFF
+[2026-09-21 23:19:23] [INFO] Alarm turned OFF
+[2026-09-21 23:19:23] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:19:23] [INFO] Temperature: 17.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:24] [INFO] Temperature: 5.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:25] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:19:25] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:19:25] [INFO] Temperature: 30.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:26] [INFO] Fan turned OFF
+[2026-09-21 23:19:26] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:19:26] [INFO] Temperature: 7.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:27] [INFO] Temperature: 22.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:28] [INFO] Temperature: 19.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:29] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:19:29] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:19:29] [INFO] Temperature: 35.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:30] [INFO] Fan turned OFF
+[2026-09-21 23:19:30] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:19:30] [INFO] Temperature: 16.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:31] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:19:31] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:19:31] [INFO] Temperature: 32.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:32] [INFO] Fan turned OFF
+[2026-09-21 23:19:32] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:19:32] [INFO] Temperature: 13.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:33] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:33] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:33] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:33] [INFO] Temperature: 42.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:34] [INFO] Temperature: 57.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:35] [INFO] Fan turned OFF
+[2026-09-21 23:19:35] [INFO] Alarm turned OFF
+[2026-09-21 23:19:35] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:19:35] [INFO] Temperature: 1.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:36] [INFO] Temperature: 15.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:37] [INFO] Temperature: 21.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:38] [INFO] Temperature: 7.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:39] [INFO] Temperature: 16.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:40] [INFO] Temperature: 12.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:41] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:19:41] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:19:41] [INFO] Temperature: 33.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:42] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:42] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:19:42] [INFO] Temperature: 53.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:43] [INFO] Alarm turned OFF
+[2026-09-21 23:19:43] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:19:43] [INFO] Temperature: 39.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:44] [INFO] Temperature: 35.4C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:45] [INFO] Temperature: 30.9C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:46] [INFO] Temperature: 30.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:47] [INFO] Fan turned OFF
+[2026-09-21 23:19:47] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:19:47] [INFO] Temperature: 15.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:48] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:19:48] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:19:48] [INFO] Temperature: 30.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:49] [INFO] Fan turned OFF
+[2026-09-21 23:19:49] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:19:49] [INFO] Temperature: 25.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:50] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:19:50] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:19:50] [INFO] Temperature: 32.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:51] [INFO] Fan turned OFF
+[2026-09-21 23:19:51] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:19:51] [INFO] Temperature: 27.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:52] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:52] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:52] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:52] [INFO] Temperature: 48.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:53] [INFO] Temperature: 43.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:54] [INFO] Fan turned OFF
+[2026-09-21 23:19:54] [INFO] Alarm turned OFF
+[2026-09-21 23:19:54] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:19:54] [INFO] Temperature: 6.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:55] [INFO] Temperature: 25.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:56] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:56] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:56] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:56] [INFO] Temperature: 56.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:19:57] [INFO] Alarm turned OFF
+[2026-09-21 23:19:57] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:19:57] [INFO] Temperature: 33.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:19:58] [INFO] Fan turned OFF
+[2026-09-21 23:19:58] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:19:58] [INFO] Temperature: 3.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:19:59] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:19:59] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:19:59] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:19:59] [INFO] Temperature: 43.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:00] [INFO] Temperature: 42.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:01] [INFO] Fan turned OFF
+[2026-09-21 23:20:01] [INFO] Alarm turned OFF
+[2026-09-21 23:20:01] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:20:01] [INFO] Temperature: 20.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:02] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:20:02] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:20:02] [INFO] Temperature: 31.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:03] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:03] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:20:03] [INFO] Temperature: 49.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:04] [INFO] Fan turned OFF
+[2026-09-21 23:20:04] [INFO] Alarm turned OFF
+[2026-09-21 23:20:04] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:20:04] [INFO] Temperature: 17.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:05] [INFO] Temperature: 21.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:06] [INFO] Temperature: 18.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:07] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:20:07] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:20:07] [INFO] Temperature: 32.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:08] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:08] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:20:08] [INFO] Temperature: 40.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:09] [INFO] Fan turned OFF
+[2026-09-21 23:20:09] [INFO] Alarm turned OFF
+[2026-09-21 23:20:09] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:20:09] [INFO] Temperature: 22.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:10] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:20:10] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:20:10] [INFO] Temperature: 33.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:11] [INFO] Fan turned OFF
+[2026-09-21 23:20:11] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:20:11] [INFO] Temperature: 2.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:12] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:20:12] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:12] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:20:12] [INFO] Temperature: 41.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:13] [INFO] Temperature: 52.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:14] [INFO] Temperature: 48.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:15] [INFO] Temperature: 46.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:16] [INFO] Temperature: 43.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:17] [INFO] Temperature: 53.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:18] [INFO] Fan turned OFF
+[2026-09-21 23:20:18] [INFO] Alarm turned OFF
+[2026-09-21 23:20:18] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:20:18] [INFO] Temperature: 14.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:19] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:20:19] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:19] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:20:19] [INFO] Temperature: 44.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:20] [INFO] Fan turned OFF
+[2026-09-21 23:20:20] [INFO] Alarm turned OFF
+[2026-09-21 23:20:20] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:20:20] [INFO] Temperature: 8.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:21] [INFO] Temperature: 4.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:22] [INFO] Temperature: 18.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:23] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:20:23] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:23] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:20:23] [INFO] Temperature: 59.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:24] [INFO] Alarm turned OFF
+[2026-09-21 23:20:24] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:20:24] [INFO] Temperature: 37.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:25] [INFO] Fan turned OFF
+[2026-09-21 23:20:25] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:20:25] [INFO] Temperature: 3.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:26] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:20:27] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:20:27] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:20:27] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:27] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:20:27] [INFO] Temperature: 53.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:28] [INFO] Fan turned OFF
+[2026-09-21 23:20:28] [INFO] Alarm turned OFF
+[2026-09-21 23:20:28] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:20:28] [INFO] Temperature: 28.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:29] [INFO] Temperature: 27.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:30] [INFO] Temperature: 8.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:31] [INFO] Temperature: 0.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:32] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:20:32] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:32] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:20:32] [INFO] Temperature: 50.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:34] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:20:35] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:20:35] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:20:35] [INFO] Temperature: 56.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:36] [INFO] Fan turned OFF
+[2026-09-21 23:20:36] [INFO] Alarm turned OFF
+[2026-09-21 23:20:36] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:20:36] [INFO] Temperature: 17.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:37] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:20:37] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:37] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:20:37] [INFO] Temperature: 58.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:38] [INFO] Temperature: 58.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:39] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:20:40] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:20:40] [INFO] Fan turned OFF
+[2026-09-21 23:20:40] [INFO] Alarm turned OFF
+[2026-09-21 23:20:40] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:20:40] [INFO] Temperature: 20.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:41] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:20:41] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:20:41] [INFO] Temperature: 37.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:42] [INFO] Temperature: 36.4C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:43] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:43] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:20:43] [INFO] Temperature: 58.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:44] [INFO] Alarm turned OFF
+[2026-09-21 23:20:44] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:20:44] [INFO] Temperature: 35.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:45] [INFO] Fan turned OFF
+[2026-09-21 23:20:45] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:20:45] [INFO] Temperature: 2.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:46] [INFO] Temperature: 11.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:47] [INFO] Temperature: 2.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:48] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:20:48] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:20:48] [INFO] Temperature: 31.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:49] [INFO] Temperature: 34.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:50] [INFO] Fan turned OFF
+[2026-09-21 23:20:50] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:20:50] [INFO] Temperature: 24.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:51] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:20:51] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:51] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:20:51] [INFO] Temperature: 44.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:52] [INFO] Temperature: 51.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:53] [INFO] Alarm turned OFF
+[2026-09-21 23:20:53] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:20:53] [INFO] Temperature: 36.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:20:54] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:20:55] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:20:55] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:20:55] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:20:55] [INFO] Temperature: 56.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:20:56] [INFO] Fan turned OFF
+[2026-09-21 23:20:56] [INFO] Alarm turned OFF
+[2026-09-21 23:20:56] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:20:56] [INFO] Temperature: 14.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:57] [INFO] Temperature: 2.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:58] [INFO] Temperature: 11.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:20:59] [INFO] Temperature: 20.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:00] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:21:00] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:21:00] [INFO] Temperature: 37.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:01] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:01] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:21:01] [INFO] Temperature: 46.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:02] [INFO] Alarm turned OFF
+[2026-09-21 23:21:02] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:21:02] [INFO] Temperature: 38.9C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:03] [INFO] Fan turned OFF
+[2026-09-21 23:21:03] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:21:03] [INFO] Temperature: 23.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:04] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:04] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:04] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:04] [INFO] Temperature: 57.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:05] [INFO] Temperature: 42.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:06] [INFO] Fan turned OFF
+[2026-09-21 23:21:06] [INFO] Alarm turned OFF
+[2026-09-21 23:21:06] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:06] [INFO] Temperature: 25.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:07] [INFO] Temperature: 0.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:08] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:21:08] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:21:08] [INFO] Temperature: 32.4C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:09] [INFO] Fan turned OFF
+[2026-09-21 23:21:09] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:21:09] [INFO] Temperature: 27.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:10] [INFO] Temperature: 28.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:11] [INFO] Temperature: 14.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:12] [INFO] Temperature: 3.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:13] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:13] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:13] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:13] [INFO] Temperature: 55.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:14] [INFO] Fan turned OFF
+[2026-09-21 23:21:14] [INFO] Alarm turned OFF
+[2026-09-21 23:21:14] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:14] [INFO] Temperature: 5.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:15] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:15] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:15] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:15] [INFO] Temperature: 42.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:16] [INFO] Fan turned OFF
+[2026-09-21 23:21:16] [INFO] Alarm turned OFF
+[2026-09-21 23:21:16] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:16] [INFO] Temperature: 27.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:17] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:21:17] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:21:17] [INFO] Temperature: 38.9C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:18] [INFO] Fan turned OFF
+[2026-09-21 23:21:18] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:21:18] [INFO] Temperature: 17.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:19] [INFO] Temperature: 22.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:20] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:20] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:20] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:20] [INFO] Temperature: 41.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:21] [INFO] Alarm turned OFF
+[2026-09-21 23:21:21] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:21:21] [INFO] Temperature: 39.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:22] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:22] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:21:22] [INFO] Temperature: 58.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:23] [INFO] Fan turned OFF
+[2026-09-21 23:21:23] [INFO] Alarm turned OFF
+[2026-09-21 23:21:23] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:23] [INFO] Temperature: 12.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:24] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:24] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:24] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:24] [INFO] Temperature: 47.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:25] [INFO] Fan turned OFF
+[2026-09-21 23:21:25] [INFO] Alarm turned OFF
+[2026-09-21 23:21:25] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:25] [INFO] Temperature: 22.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:26] [INFO] Temperature: 15.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:27] [INFO] Temperature: 14.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:28] [INFO] Temperature: 6.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:29] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:29] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:29] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:29] [INFO] Temperature: 59.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:30] [INFO] Fan turned OFF
+[2026-09-21 23:21:30] [INFO] Alarm turned OFF
+[2026-09-21 23:21:30] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:30] [INFO] Temperature: 24.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:31] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:21:31] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:21:31] [INFO] Temperature: 39.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:32] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:32] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:21:32] [INFO] Temperature: 40.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:33] [INFO] Temperature: 40.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:34] [INFO] Temperature: 51.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:35] [INFO] Alarm turned OFF
+[2026-09-21 23:21:35] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:21:35] [INFO] Temperature: 38.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:36] [INFO] Fan turned OFF
+[2026-09-21 23:21:36] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:21:36] [INFO] Temperature: 26.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:37] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:21:37] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:21:37] [INFO] Temperature: 35.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:38] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:38] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:21:38] [INFO] Temperature: 58.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:39] [INFO] Fan turned OFF
+[2026-09-21 23:21:39] [INFO] Alarm turned OFF
+[2026-09-21 23:21:39] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:39] [INFO] Temperature: 20.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:40] [INFO] Temperature: 29.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:41] [INFO] Temperature: 16.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:42] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:21:42] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:21:42] [INFO] Temperature: 34.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:43] [INFO] Temperature: 39.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:44] [INFO] Fan turned OFF
+[2026-09-21 23:21:44] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:21:44] [INFO] Temperature: 27.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:45] [INFO] Temperature: 10.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:46] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:46] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:46] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:46] [INFO] Temperature: 56.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:47] [INFO] Fan turned OFF
+[2026-09-21 23:21:47] [INFO] Alarm turned OFF
+[2026-09-21 23:21:47] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:47] [INFO] Temperature: 19.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:48] [INFO] Temperature: 19.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:49] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:49] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:49] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:49] [INFO] Temperature: 57.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:50] [INFO] Fan turned OFF
+[2026-09-21 23:21:50] [INFO] Alarm turned OFF
+[2026-09-21 23:21:50] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:50] [INFO] Temperature: 18.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:51] [INFO] Temperature: 10.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:52] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:52] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:52] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:52] [INFO] Temperature: 45.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:53] [INFO] Fan turned OFF
+[2026-09-21 23:21:53] [INFO] Alarm turned OFF
+[2026-09-21 23:21:53] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:21:53] [INFO] Temperature: 15.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:54] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:21:56] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:21:56] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:21:56] [INFO] Temperature: 10.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:21:57] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:21:57] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:21:57] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:21:57] [INFO] Temperature: 56.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:21:58] [INFO] Alarm turned OFF
+[2026-09-21 23:21:58] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:21:58] [INFO] Temperature: 33.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:21:59] [INFO] Fan turned OFF
+[2026-09-21 23:21:59] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:21:59] [INFO] Temperature: 16.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:00] [INFO] Temperature: 15.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:01] [INFO] Temperature: 24.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:02] [INFO] Temperature: 28.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:03] [INFO] Temperature: 3.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:04] [INFO] Temperature: 22.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:05] [INFO] Temperature: 2.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:06] [INFO] Temperature: 15.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:07] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:07] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:07] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:07] [INFO] Temperature: 46.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:08] [INFO] Fan turned OFF
+[2026-09-21 23:22:08] [INFO] Alarm turned OFF
+[2026-09-21 23:22:08] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:08] [INFO] Temperature: 26.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:09] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:09] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:09] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:09] [INFO] Temperature: 45.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:10] [INFO] Alarm turned OFF
+[2026-09-21 23:22:10] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:22:10] [INFO] Temperature: 32.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:22:11] [INFO] Temperature: 36.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:22:12] [INFO] Temperature: 37.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:22:13] [INFO] Fan turned OFF
+[2026-09-21 23:22:13] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:22:13] [INFO] Temperature: 6.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:14] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:14] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:14] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:14] [INFO] Temperature: 51.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:15] [INFO] Fan turned OFF
+[2026-09-21 23:22:15] [INFO] Alarm turned OFF
+[2026-09-21 23:22:15] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:15] [INFO] Temperature: 13.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:16] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:16] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:16] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:16] [INFO] Temperature: 42.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:17] [INFO] Temperature: 40.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:18] [INFO] Fan turned OFF
+[2026-09-21 23:22:18] [INFO] Alarm turned OFF
+[2026-09-21 23:22:18] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:18] [INFO] Temperature: 19.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:19] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:19] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:19] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:19] [INFO] Temperature: 55.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:20] [INFO] Fan turned OFF
+[2026-09-21 23:22:20] [INFO] Alarm turned OFF
+[2026-09-21 23:22:20] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:20] [INFO] Temperature: 5.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:21] [INFO] Temperature: 26.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:22] [INFO] Temperature: 2.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:23] [INFO] Temperature: 2.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:24] [INFO] Temperature: 7.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:25] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:25] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:25] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:25] [INFO] Temperature: 41.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:26] [INFO] Fan turned OFF
+[2026-09-21 23:22:26] [INFO] Alarm turned OFF
+[2026-09-21 23:22:26] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:26] [INFO] Temperature: 26.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:27] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:27] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:27] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:27] [INFO] Temperature: 40.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:28] [INFO] Fan turned OFF
+[2026-09-21 23:22:28] [INFO] Alarm turned OFF
+[2026-09-21 23:22:28] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:28] [INFO] Temperature: 13.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:29] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:29] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:29] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:29] [INFO] Temperature: 52.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:30] [INFO] Temperature: 50.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:31] [INFO] Alarm turned OFF
+[2026-09-21 23:22:31] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:22:31] [INFO] Temperature: 31.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:22:32] [INFO] Fan turned OFF
+[2026-09-21 23:22:32] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:22:32] [INFO] Temperature: 14.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:33] [INFO] Temperature: 15.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:34] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:34] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:34] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:34] [INFO] Temperature: 50.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:35] [INFO] Fan turned OFF
+[2026-09-21 23:22:35] [INFO] Alarm turned OFF
+[2026-09-21 23:22:35] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:35] [INFO] Temperature: 20.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:36] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:22:36] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:22:36] [INFO] Temperature: 34.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:22:37] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:37] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:22:37] [INFO] Temperature: 48.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:38] [INFO] Temperature: 51.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:39] [INFO] Fan turned OFF
+[2026-09-21 23:22:39] [INFO] Alarm turned OFF
+[2026-09-21 23:22:39] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:39] [INFO] Temperature: 24.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:40] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:40] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:40] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:40] [INFO] Temperature: 46.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:41] [INFO] Temperature: 58.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:42] [INFO] Fan turned OFF
+[2026-09-21 23:22:42] [INFO] Alarm turned OFF
+[2026-09-21 23:22:42] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:42] [INFO] Temperature: 16.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:43] [INFO] Temperature: 19.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:44] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:44] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:44] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:44] [INFO] Temperature: 50.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:45] [INFO] Fan turned OFF
+[2026-09-21 23:22:45] [INFO] Alarm turned OFF
+[2026-09-21 23:22:45] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:45] [INFO] Temperature: 1.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:46] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:22:46] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:22:46] [INFO] Temperature: 37.4C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:22:47] [INFO] Fan turned OFF
+[2026-09-21 23:22:47] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:22:47] [INFO] Temperature: 19.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:48] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:48] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:48] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:48] [INFO] Temperature: 44.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:49] [INFO] Alarm turned OFF
+[2026-09-21 23:22:49] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:22:49] [INFO] Temperature: 33.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:22:50] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:50] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:22:50] [INFO] Temperature: 42.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:51] [INFO] Fan turned OFF
+[2026-09-21 23:22:51] [INFO] Alarm turned OFF
+[2026-09-21 23:22:51] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:51] [INFO] Temperature: 24.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:52] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:52] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:52] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:52] [INFO] Temperature: 54.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:53] [INFO] Temperature: 49.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:54] [INFO] Temperature: 43.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:55] [INFO] Fan turned OFF
+[2026-09-21 23:22:55] [INFO] Alarm turned OFF
+[2026-09-21 23:22:55] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:55] [INFO] Temperature: 10.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:56] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:56] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:56] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:56] [INFO] Temperature: 46.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:57] [INFO] Fan turned OFF
+[2026-09-21 23:22:57] [INFO] Alarm turned OFF
+[2026-09-21 23:22:57] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:22:57] [INFO] Temperature: 11.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:22:58] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:22:58] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:22:58] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:22:58] [INFO] Temperature: 49.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:22:59] [INFO] Alarm turned OFF
+[2026-09-21 23:22:59] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:22:59] [INFO] Temperature: 37.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:00] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:00] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:23:00] [INFO] Temperature: 45.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:01] [INFO] Temperature: 45.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:02] [INFO] Fan turned OFF
+[2026-09-21 23:23:02] [INFO] Alarm turned OFF
+[2026-09-21 23:23:02] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:23:02] [INFO] Temperature: 11.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:03] [INFO] Temperature: 25.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:04] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:23:04] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:04] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:23:04] [INFO] Temperature: 54.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:05] [INFO] Fan turned OFF
+[2026-09-21 23:23:05] [INFO] Alarm turned OFF
+[2026-09-21 23:23:05] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:23:05] [INFO] Temperature: 26.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:06] [INFO] Temperature: 0.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:07] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:23:08] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:23:08] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:23:08] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:08] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:23:08] [INFO] Temperature: 44.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:09] [INFO] Fan turned OFF
+[2026-09-21 23:23:09] [INFO] Alarm turned OFF
+[2026-09-21 23:23:09] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:23:09] [INFO] Temperature: 3.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:10] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:23:10] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:23:10] [INFO] Temperature: 33.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:11] [INFO] Temperature: 37.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:12] [INFO] Temperature: 33.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:13] [INFO] Fan turned OFF
+[2026-09-21 23:23:13] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:23:13] [INFO] Temperature: 8.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:14] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:23:14] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:14] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:23:14] [INFO] Temperature: 51.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:15] [INFO] Alarm turned OFF
+[2026-09-21 23:23:15] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:23:15] [INFO] Temperature: 37.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:16] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:16] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:23:16] [INFO] Temperature: 53.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:17] [INFO] Fan turned OFF
+[2026-09-21 23:23:17] [INFO] Alarm turned OFF
+[2026-09-21 23:23:17] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:23:17] [INFO] Temperature: 25.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:18] [INFO] Temperature: 11.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:19] [INFO] Temperature: 16.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:20] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:23:20] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:23:20] [INFO] Temperature: 30.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:21] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:23:22] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:23:22] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:22] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:23:22] [INFO] Temperature: 55.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:23] [INFO] Alarm turned OFF
+[2026-09-21 23:23:23] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:23:23] [INFO] Temperature: 37.4C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:24] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:23:25] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:23:25] [INFO] Fan turned OFF
+[2026-09-21 23:23:25] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:23:25] [INFO] Temperature: 3.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:26] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:23:26] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:26] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:23:26] [INFO] Temperature: 55.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:27] [INFO] Alarm turned OFF
+[2026-09-21 23:23:27] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:23:27] [INFO] Temperature: 32.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:28] [INFO] Fan turned OFF
+[2026-09-21 23:23:28] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:23:28] [INFO] Temperature: 26.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:29] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:23:29] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:29] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:23:29] [INFO] Temperature: 40.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:30] [INFO] Temperature: 57.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:31] [INFO] Temperature: 57.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:32] [INFO] Fan turned OFF
+[2026-09-21 23:23:32] [INFO] Alarm turned OFF
+[2026-09-21 23:23:32] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:23:32] [INFO] Temperature: 19.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:33] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:23:33] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:33] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:23:33] [INFO] Temperature: 59.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:34] [INFO] Temperature: 46.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:35] [INFO] Temperature: 51.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:37] [INFO] Fan turned OFF
+[2026-09-21 23:23:37] [INFO] Alarm turned OFF
+[2026-09-21 23:23:37] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:23:37] [INFO] Temperature: 20.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:38] [INFO] Temperature: 25.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:39] [INFO] Temperature: 29.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:40] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:41] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:23:41] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:41] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:23:41] [INFO] Temperature: 42.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:42] [INFO] Alarm turned OFF
+[2026-09-21 23:23:42] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:23:42] [INFO] Temperature: 39.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:43] [INFO] Temperature: 32.4C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:44] [INFO] Fan turned OFF
+[2026-09-21 23:23:44] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:23:44] [INFO] Temperature: 23.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:45] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:23:45] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:45] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:23:45] [INFO] Temperature: 41.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:46] [INFO] Fan turned OFF
+[2026-09-21 23:23:46] [INFO] Alarm turned OFF
+[2026-09-21 23:23:46] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:23:46] [INFO] Temperature: 9.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:47] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:23:47] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:47] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:23:47] [INFO] Temperature: 51.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:48] [INFO] Alarm turned OFF
+[2026-09-21 23:23:48] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:23:48] [INFO] Temperature: 31.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:49] [INFO] Fan turned OFF
+[2026-09-21 23:23:49] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:23:49] [INFO] Temperature: 4.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:50] [INFO] Temperature: 9.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:51] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:23:51] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:23:51] [INFO] Temperature: 39.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:52] [INFO] Temperature: 39.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:53] [INFO] Temperature: 39.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:54] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:54] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:23:54] [INFO] Temperature: 50.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:55] [INFO] Alarm turned OFF
+[2026-09-21 23:23:55] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:23:55] [INFO] Temperature: 34.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:23:56] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:23:56] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:23:56] [INFO] Temperature: 42.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:57] [INFO] Temperature: 47.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:23:58] [INFO] Fan turned OFF
+[2026-09-21 23:23:58] [INFO] Alarm turned OFF
+[2026-09-21 23:23:58] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:23:58] [INFO] Temperature: 29.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:23:59] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:23:59] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:23:59] [INFO] Temperature: 37.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:00] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:00] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:24:00] [INFO] Temperature: 45.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:01] [INFO] Fan turned OFF
+[2026-09-21 23:24:01] [INFO] Alarm turned OFF
+[2026-09-21 23:24:01] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:01] [INFO] Temperature: 26.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:02] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:02] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:02] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:02] [INFO] Temperature: 55.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:03] [INFO] Fan turned OFF
+[2026-09-21 23:24:03] [INFO] Alarm turned OFF
+[2026-09-21 23:24:03] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:03] [INFO] Temperature: 23.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:04] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:04] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:04] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:04] [INFO] Temperature: 56.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:05] [INFO] Fan turned OFF
+[2026-09-21 23:24:05] [INFO] Alarm turned OFF
+[2026-09-21 23:24:05] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:05] [INFO] Temperature: 26.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:06] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:06] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:06] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:06] [INFO] Temperature: 55.7C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:07] [INFO] Temperature: 48.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:08] [INFO] Fan turned OFF
+[2026-09-21 23:24:08] [INFO] Alarm turned OFF
+[2026-09-21 23:24:08] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:08] [INFO] Temperature: 16.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:09] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:24:09] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:24:09] [INFO] Temperature: 32.4C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:10] [INFO] Fan turned OFF
+[2026-09-21 23:24:10] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:24:10] [INFO] Temperature: 7.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:11] [INFO] Temperature: 6.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:12] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:12] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:12] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:12] [INFO] Temperature: 52.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:13] [INFO] Fan turned OFF
+[2026-09-21 23:24:13] [INFO] Alarm turned OFF
+[2026-09-21 23:24:13] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:13] [INFO] Temperature: 19.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:14] [INFO] Temperature: 1.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:15] [INFO] Temperature: 6.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:16] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:24:16] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:24:16] [INFO] Temperature: 37.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:17] [INFO] Fan turned OFF
+[2026-09-21 23:24:17] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:24:17] [INFO] Temperature: 10.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:18] [INFO] Temperature: 23.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:19] [INFO] Temperature: 23.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:20] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:20] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:20] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:20] [INFO] Temperature: 41.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:21] [INFO] Temperature: 45.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:22] [INFO] Temperature: 59.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:23] [INFO] Temperature: 53.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:24] [INFO] Fan turned OFF
+[2026-09-21 23:24:24] [INFO] Alarm turned OFF
+[2026-09-21 23:24:24] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:24] [INFO] Temperature: 21.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:25] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:25] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:25] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:25] [INFO] Temperature: 51.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:26] [INFO] Fan turned OFF
+[2026-09-21 23:24:26] [INFO] Alarm turned OFF
+[2026-09-21 23:24:26] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:26] [INFO] Temperature: 14.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:27] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:27] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:27] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:27] [INFO] Temperature: 43.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:28] [INFO] Fan turned OFF
+[2026-09-21 23:24:28] [INFO] Alarm turned OFF
+[2026-09-21 23:24:28] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:28] [INFO] Temperature: 11.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:29] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:29] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:29] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:29] [INFO] Temperature: 40.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:30] [INFO] Fan turned OFF
+[2026-09-21 23:24:30] [INFO] Alarm turned OFF
+[2026-09-21 23:24:30] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:30] [INFO] Temperature: 27.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:31] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:31] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:31] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:31] [INFO] Temperature: 52.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:32] [INFO] Fan turned OFF
+[2026-09-21 23:24:32] [INFO] Alarm turned OFF
+[2026-09-21 23:24:32] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:32] [INFO] Temperature: 5.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:33] [INFO] Temperature: 11.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:34] [INFO] Temperature: 16.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:35] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:24:35] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:24:35] [INFO] Temperature: 35.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:36] [INFO] Temperature: 38.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:37] [INFO] Fan turned OFF
+[2026-09-21 23:24:37] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:24:37] [INFO] Temperature: 21.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:38] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:38] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:38] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:38] [INFO] Temperature: 53.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:39] [INFO] Fan turned OFF
+[2026-09-21 23:24:39] [INFO] Alarm turned OFF
+[2026-09-21 23:24:39] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:39] [INFO] Temperature: 23.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:40] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:24:40] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:24:40] [INFO] Temperature: 38.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:41] [INFO] Fan turned OFF
+[2026-09-21 23:24:41] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:24:41] [INFO] Temperature: 1.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:42] [INFO] Temperature: 8.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:43] [INFO] Temperature: 29.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:44] [INFO] Temperature: 25.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:45] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:24:45] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:24:45] [INFO] Temperature: 38.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:46] [INFO] Temperature: 35.2C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:47] [INFO] Fan turned OFF
+[2026-09-21 23:24:47] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:24:47] [INFO] Temperature: 16.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:48] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:48] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:48] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:48] [INFO] Temperature: 59.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:49] [INFO] Fan turned OFF
+[2026-09-21 23:24:49] [INFO] Alarm turned OFF
+[2026-09-21 23:24:49] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:49] [INFO] Temperature: 16.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:50] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:24:50] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:24:50] [INFO] Temperature: 32.9C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:51] [INFO] Fan turned OFF
+[2026-09-21 23:24:51] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:24:51] [INFO] Temperature: 6.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:52] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:52] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:52] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:52] [INFO] Temperature: 50.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:53] [INFO] Temperature: 49.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:54] [INFO] Alarm turned OFF
+[2026-09-21 23:24:54] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:24:54] [INFO] Temperature: 32.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:24:55] [INFO] Fan turned OFF
+[2026-09-21 23:24:55] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:24:55] [INFO] Temperature: 14.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:56] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:56] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:56] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:56] [INFO] Temperature: 58.2C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:24:57] [INFO] Fan turned OFF
+[2026-09-21 23:24:58] [INFO] Alarm turned OFF
+[2026-09-21 23:24:58] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:24:58] [INFO] Temperature: 23.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:24:59] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:24:59] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:24:59] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:24:59] [INFO] Temperature: 48.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:25:00] [INFO] Fan turned OFF
+[2026-09-21 23:25:00] [INFO] Alarm turned OFF
+[2026-09-21 23:25:00] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:25:00] [INFO] Temperature: 6.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:01] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:25:01] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:25:01] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:25:01] [INFO] Temperature: 44.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:25:02] [INFO] Alarm turned OFF
+[2026-09-21 23:25:02] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:25:02] [INFO] Temperature: 32.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:25:03] [INFO] Temperature: 36.9C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:25:04] [INFO] Temperature: 34.9C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:25:05] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:25:05] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:25:05] [INFO] Temperature: 54.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:25:06] [INFO] Fan turned OFF
+[2026-09-21 23:25:06] [INFO] Alarm turned OFF
+[2026-09-21 23:25:06] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:25:06] [INFO] Temperature: 18.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:07] [INFO] Temperature: 22.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:08] [INFO] Temperature: 7.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:09] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:25:09] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:25:09] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:25:09] [INFO] Temperature: 41.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:25:10] [INFO] Alarm turned OFF
+[2026-09-21 23:25:10] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:25:10] [INFO] Temperature: 31.4C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:25:11] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:25:11] [INFO] Status changed: WARNING -> CRITICAL
+[2026-09-21 23:25:11] [INFO] Temperature: 55.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:25:12] [INFO] Fan turned OFF
+[2026-09-21 23:25:12] [INFO] Alarm turned OFF
+[2026-09-21 23:25:12] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:25:12] [INFO] Temperature: 26.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:13] [INFO] Temperature: 14.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:14] [INFO] Temperature: 2.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:15] [INFO] Temperature: 26.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:16] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:25:16] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:25:16] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:25:16] [INFO] Temperature: 44.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:25:17] [INFO] Fan turned OFF
+[2026-09-21 23:25:17] [INFO] Alarm turned OFF
+[2026-09-21 23:25:17] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:25:17] [INFO] Temperature: 9.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:18] [INFO] Temperature: 25.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:19] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:25:19] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:25:19] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:25:19] [INFO] Temperature: 54.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:25:20] [INFO] Temperature: 42.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:25:21] [INFO] Fan turned OFF
+[2026-09-21 23:25:21] [INFO] Alarm turned OFF
+[2026-09-21 23:25:21] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:25:21] [INFO] Temperature: 2.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:22] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:25:23] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:25:23] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:25:23] [INFO] Status changed: SENSOR_ERROR -> WARNING
+[2026-09-21 23:25:23] [INFO] Temperature: 39.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:25:24] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:25:25] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:25:25] [INFO] Fan turned OFF
+[2026-09-21 23:25:25] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:25:25] [INFO] Temperature: 16.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:26] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:25:26] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:25:26] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:25:26] [INFO] Temperature: 44.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:25:27] [INFO] Fan turned OFF
+[2026-09-21 23:25:27] [INFO] Alarm turned OFF
+[2026-09-21 23:25:27] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:25:27] [INFO] Temperature: 13.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:28] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:25:28] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:25:28] [INFO] Temperature: 37.8C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:25:29] [INFO] Fan turned OFF
+[2026-09-21 23:25:29] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:25:29] [INFO] Temperature: 7.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:30] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:25:31] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:25:31] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:25:31] [INFO] Status changed: SENSOR_ERROR -> WARNING
+[2026-09-21 23:25:31] [INFO] Temperature: 32.1C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:25:32] [INFO] Temperature: 34.6C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:25:33] [INFO] Fan turned OFF
+[2026-09-21 23:25:33] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:25:33] [INFO] Temperature: 10.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:34] [INFO] Temperature: 19.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:35] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:25:36] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:25:36] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:25:36] [INFO] Temperature: 4.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:37] [INFO] Temperature: 28.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:38] [INFO] Temperature: 21.7C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:25:39] [INFO] System shutdown requested by user
+[2026-09-21 23:25:39] [INFO] === System Shutdown ===
+========================================
+
+========================================
+[2026-09-21 23:25:59] [INFO] === System Started ===
+[2026-09-21 23:25:59] [INFO] Mode: AUTO
+[2026-09-21 23:25:59] [INFO] Controller initialized - Fan threshold: 30C, Alarm threshold: 40C, Valid range: [0, 60]C, Fault threshold: 3 cycles
+[2026-09-21 23:25:59] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:25:59] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:25:59] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:25:59] [INFO] Temperature: 53.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:26:00] [INFO] Alarm turned OFF
+[2026-09-21 23:26:00] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:26:00] [INFO] Temperature: 34.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:26:01] [INFO] Fan turned OFF
+[2026-09-21 23:26:01] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:26:01] [INFO] Temperature: 17.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:02] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:26:02] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:26:02] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:26:02] [INFO] Temperature: 40.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:26:03] [INFO] Fan turned OFF
+[2026-09-21 23:26:03] [INFO] Alarm turned OFF
+[2026-09-21 23:26:03] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:26:03] [INFO] Temperature: 19.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:04] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:26:05] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:26:05] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:26:05] [INFO] Status changed: SENSOR_ERROR -> WARNING
+[2026-09-21 23:26:05] [INFO] Temperature: 37.7C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:26:06] [INFO] Fan turned OFF
+[2026-09-21 23:26:06] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:26:06] [INFO] Temperature: 24.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:07] [INFO] Temperature: 30.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:08] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:26:08] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:26:08] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:26:08] [INFO] Temperature: 47.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:26:09] [INFO] Fan turned OFF
+[2026-09-21 23:26:09] [INFO] Alarm turned OFF
+[2026-09-21 23:26:09] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:26:09] [INFO] Temperature: 26.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:10] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:26:10] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:26:10] [INFO] Temperature: 39.5C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:26:11] [INFO] Fan turned OFF
+[2026-09-21 23:26:11] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:26:11] [INFO] Temperature: 21.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:12] [INFO] Temperature: 21.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:13] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:26:14] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:26:14] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:26:14] [INFO] Temperature: 8.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:15] [INFO] Temperature: 7.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:16] [INFO] Temperature: 16.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:26:17] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:26:18] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:26:18] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:26:18] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:26:18] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:26:18] [INFO] Temperature: 60.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:26:19] [INFO] Alarm turned OFF
+[2026-09-21 23:26:19] [INFO] Status changed: CRITICAL -> WARNING
+[2026-09-21 23:26:19] [INFO] Temperature: 31.0C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:26:20] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:26:21] [INFO] System shutdown requested by user
+[2026-09-21 23:26:21] [INFO] === System Shutdown ===
+========================================
+
+========================================
+[2026-09-21 23:30:45] [INFO] === System Started ===
+[2026-09-21 23:30:45] [INFO] Mode: AUTO
+[2026-09-21 23:30:45] [INFO] Controller initialized - Fan threshold: 30C, Alarm threshold: 40C, Valid range: [0, 60]C, Fault threshold: 3 cycles
+[2026-09-21 23:30:45] [INFO] Temperature: 29.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:30:46] [INFO] Temperature: 26.5C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:30:47] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:30:47] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:30:47] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:30:47] [INFO] Temperature: 41.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:30:48] [INFO] Fan turned OFF
+[2026-09-21 23:30:48] [INFO] Alarm turned OFF
+[2026-09-21 23:30:48] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:30:48] [INFO] Temperature: 12.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:30:49] [INFO] Temperature: 26.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:30:50] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:30:50] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:30:50] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:30:50] [INFO] Temperature: 53.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:30:51] [INFO] Temperature: 44.0C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:30:52] [INFO] Fan turned OFF
+[2026-09-21 23:30:52] [INFO] Alarm turned OFF
+[2026-09-21 23:30:52] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:30:52] [INFO] Temperature: 10.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:30:53] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:30:53] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:30:53] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:30:53] [INFO] Temperature: 57.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:30:54] [INFO] Temperature: 46.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:30:55] [INFO] Fan turned OFF
+[2026-09-21 23:30:55] [INFO] Alarm turned OFF
+[2026-09-21 23:30:55] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:30:55] [INFO] Temperature: 25.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:30:56] [INFO] Temperature: 20.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:30:57] [INFO] Temperature: 29.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:30:58] [WARNING] Fan turned ON - Temperature WARNING
+[2026-09-21 23:30:58] [INFO] Status changed: NORMAL -> WARNING
+[2026-09-21 23:30:58] [INFO] Temperature: 38.3C | Status: WARNING | Fan: ON | Alarm: OFF
+[2026-09-21 23:30:59] [INFO] Fan turned OFF
+[2026-09-21 23:30:59] [INFO] Status changed: WARNING -> NORMAL
+[2026-09-21 23:30:59] [INFO] Temperature: 24.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:31:00] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:31:00] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:31:00] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:31:00] [INFO] Temperature: 42.6C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:01] [INFO] Temperature: 54.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:02] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:31:03] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:31:03] [INFO] Fan turned OFF
+[2026-09-21 23:31:03] [INFO] Alarm turned OFF
+[2026-09-21 23:31:03] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:31:03] [INFO] Temperature: 9.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:31:04] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:31:04] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:31:04] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:31:04] [INFO] Temperature: 59.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:05] [INFO] Fan turned OFF
+[2026-09-21 23:31:05] [INFO] Alarm turned OFF
+[2026-09-21 23:31:05] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:31:05] [INFO] Temperature: 23.4C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:31:06] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:31:06] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:31:06] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:31:06] [INFO] Temperature: 45.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:07] [INFO] Temperature: 58.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:08] [INFO] Temperature: 54.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:09] [INFO] Fan turned OFF
+[2026-09-21 23:31:09] [INFO] Alarm turned OFF
+[2026-09-21 23:31:09] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:31:09] [INFO] Temperature: 17.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:31:10] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:31:10] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:31:10] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:31:10] [INFO] Temperature: 44.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:11] [INFO] Temperature: 55.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:12] [INFO] Fan turned OFF
+[2026-09-21 23:31:12] [INFO] Alarm turned OFF
+[2026-09-21 23:31:12] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:31:12] [INFO] Temperature: 5.6C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:31:13] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:31:14] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:31:14] [INFO] Status changed: SENSOR_ERROR -> NORMAL
+[2026-09-21 23:31:14] [INFO] Temperature: 9.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:31:15] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: -999.0C - Holding last valid state
+[2026-09-21 23:31:16] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:31:16] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:31:16] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:31:16] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:31:16] [INFO] Temperature: 42.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:17] [WARNING] Sensor transient fault detected (Count: 1/3) - Raw value: 120.0C - Holding last valid state
+[2026-09-21 23:31:18] [INFO] Sensor recovered after 0 fault cycle(s) - Resuming normal operation
+[2026-09-21 23:31:18] [INFO] Status changed: SENSOR_ERROR -> CRITICAL
+[2026-09-21 23:31:18] [INFO] Temperature: 50.3C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:31:19] [INFO] System shutdown requested by user
+[2026-09-21 23:31:19] [INFO] === System Shutdown ===
+========================================
+
+========================================
+[2026-09-21 23:49:52] [INFO] === System Started ===
+[2026-09-21 23:49:52] [INFO] Mode: AUTO
+[2026-09-21 23:49:52] [INFO] Controller initialized - Fan threshold: 30C, Alarm threshold: 40C, Valid range: [0, 60]C, Fault threshold: 3 cycles
+[2026-09-21 23:49:52] [INFO] Temperature: 9.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:49:53] [INFO] Temperature: 1.9C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:49:54] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:49:54] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:49:54] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:49:54] [INFO] Temperature: 42.5C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:49:55] [INFO] Temperature: 44.1C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:49:56] [INFO] Fan turned OFF
+[2026-09-21 23:49:56] [INFO] Alarm turned OFF
+[2026-09-21 23:49:56] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:49:56] [INFO] Temperature: 22.8C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:49:57] [INFO] Temperature: 21.1C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:49:58] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:49:58] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:49:58] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:49:58] [INFO] Temperature: 47.8C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:49:59] [INFO] Fan turned OFF
+[2026-09-21 23:49:59] [INFO] Alarm turned OFF
+[2026-09-21 23:49:59] [INFO] Status changed: CRITICAL -> NORMAL
+[2026-09-21 23:49:59] [INFO] Temperature: 8.2C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:50:00] [INFO] Temperature: 12.3C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-21 23:50:01] [CRITICAL] Fan turned ON - Temperature CRITICAL
+[2026-09-21 23:50:01] [CRITICAL] Alarm turned ON - Temperature CRITICAL!
+[2026-09-21 23:50:01] [INFO] Status changed: NORMAL -> CRITICAL
+[2026-09-21 23:50:01] [INFO] Temperature: 43.9C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:50:02] [INFO] Temperature: 40.4C | Status: CRITICAL | Fan: ON | Alarm: ON
+[2026-09-21 23:50:03] [INFO] System shutdown requested by user
+[2026-09-21 23:50:03] [INFO] === System Shutdown ===
+========================================
