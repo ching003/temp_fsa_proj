@@ -5168,3 +5168,49 @@
 [2026-09-22 10:47:28] [INFO] System shutdown requested by user
 [2026-09-22 10:47:28] [INFO] === System Shutdown ===
 ========================================
+
+========================================
+[2026-09-22 11:03:30] [INFO] === System Started ===
+[2026-09-22 11:03:30] [INFO] Mode: MANUAL
+[2026-09-22 11:03:30] [INFO] Controller initialized - Fan threshold: 30C, Alarm threshold: 40C, Valid range: [0, 60]C, Fault threshold: 3 cycles
+[2026-09-22 11:03:30] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:31] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:32] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:33] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:34] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:35] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:36] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:37] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:38] [INFO] Temperature: 23.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:39] [INFO] Temperature: 23.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:40] [INFO] Temperature: 23.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:41] [INFO] Temperature: 23.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:42] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:43] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:44] [INFO] Temperature: 25.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:45] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:46] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:47] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:48] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:50] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:51] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:52] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:53] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:54] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:55] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:56] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:57] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:58] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:03:59] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:00] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:01] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:02] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:03] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:04] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:05] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:06] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:07] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:08] [INFO] Temperature: 0.0C | Status: NORMAL | Fan: OFF | Alarm: OFF
+[2026-09-22 11:04:09] [INFO] System shutdown requested by user
+[2026-09-22 11:04:09] [INFO] === System Shutdown ===
+========================================
