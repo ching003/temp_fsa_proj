@@ -213,6 +213,7 @@ int main()
     while (systemRunning.load())
     {
         double temp = 0.0;
+        bool hasNewManualInput = false;
 
         // CHECK INPUT tu input thread (lock mutex)
         {
@@ -239,6 +240,7 @@ int main()
             if (sharedInput.hasNewInput)
             {
                 temp = sharedInput.temperature;
+                hasNewManualInput = true;
                 sharedInput.hasNewInput = false;
             }
         }
@@ -252,7 +254,7 @@ int main()
         {
             // MANUAL: neu khong co input moi, giu lastValidTemp
             lock_guard<mutex> lock(dataMutex);
-            if (!sharedInput.hasNewInput && temp == 0.0)
+            if (!hasNewManualInput)
             {
                 temp = controller.getLastValidTemp();
             }
