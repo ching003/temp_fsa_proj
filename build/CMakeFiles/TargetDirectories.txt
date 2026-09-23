@@ -1,0 +1,3 @@
+C:/Users/Admin/Documents/C++_Embedded/Mock Project/temperature_simulator/build/CMakeFiles/temperature_simulator.dir
+C:/Users/Admin/Documents/C++_Embedded/Mock Project/temperature_simulator/build/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Documents/C++_Embedded/Mock Project/temperature_simulator/build/CMakeFiles/rebuild_cache.dir

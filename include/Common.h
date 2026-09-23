@@ -86,6 +86,13 @@ struct TemperatureStats
         count = 0;
     }
 };
+// Cau truc truyen du lieu giua 2 thread (Input -> Main)
+struct InputMessage
+{
+    double temperature = 0.0;
+    bool hasNewInput = false;
+    bool modeToggleRequested = false;
+};
 
 // ============================================================
 // Helper functions: enum -> string (cho log/display)
