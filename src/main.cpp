@@ -209,11 +209,12 @@ int main()
     // 5 Spawn input thread
     thread inputThread(&InputHandler::run, &inputHandler);
 
+    double currentManualTemp = controller.getLastValidTemp();
+
     // 6 SUPER-LOOP - Main Thread (1s/cycle)
     while (systemRunning.load())
     {
         double temp = 0.0;
-        bool hasNewManualInput = false;
 
         // CHECK INPUT tu input thread (lock mutex)
         {
@@ -226,6 +227,7 @@ int main()
                 {
                     currentMode = Mode::MANUAL;
                     sensor.setMode(Mode::MANUAL);
+                    currentManualTemp = controller.getLastValidTemp();
                 }
                 else
                 {
@@ -239,8 +241,7 @@ int main()
             // Co du lieu moi tu MANUAL mode?
             if (sharedInput.hasNewInput)
             {
-                temp = sharedInput.temperature;
-                hasNewManualInput = true;
+                currentManualTemp = sharedInput.temperature;
                 sharedInput.hasNewInput = false;
             }
         }
@@ -252,12 +253,8 @@ int main()
         }
         else
         {
-            // MANUAL: neu khong co input moi, giu lastValidTemp
-            lock_guard<mutex> lock(dataMutex);
-            if (!hasNewManualInput)
-            {
-                temp = controller.getLastValidTemp();
-            }
+            // MANUAL: giu nguyen gia tri nhap gan nhat (ke ca dung hay loi deu giu nguyen)
+            temp = currentManualTemp;
         }
 
         // PROCESS
