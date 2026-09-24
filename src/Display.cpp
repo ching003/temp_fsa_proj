@@ -88,6 +88,10 @@ Display::Display(std::mutex &mtx) : displayMutex(mtx)
 void Display::initScreen()
 {
 #ifdef _WIN32
+    // Console APIs need an explicit UTF-8 code page for narrow UTF-8 output.
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+
     // Bật Virtual Terminal Processing trên Windows
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
     if (hOut != INVALID_HANDLE_VALUE)
